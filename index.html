@@ -3,442 +3,564 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>UNITRAMP Спорт · батуты, дорожки и маты для спортивных школ</title>
-<meta name="description" content="Спортивные батуты 5×3 и 5×5, надувные акробатические дорожки, гимнастические маты и сетки. Собственное производство UNITRAMP с 2014 года, документы для закупки.">
+<title>UNITRAMP Спорт · батуты и дорожки для спортивных школ</title>
+<meta name="description" content="Спортивные батуты 5×3, надувные акробатические дорожки, маты и сетки для СШОР, федераций и клубов. Собственное производство UNITRAMP с 2014 года.">
 <style>
-@font-face{font-family:'PT Serif';src:url(assets/fonts/PT_Serif-Web-Regular.ttf) format('truetype');font-weight:400;font-display:swap}
-@font-face{font-family:'PT Serif';src:url(assets/fonts/PT_Serif-Web-Bold.ttf) format('truetype');font-weight:700;font-display:swap}
-@font-face{font-family:'PT Serif';src:url(assets/fonts/PT_Serif-Web-Italic.ttf) format('truetype');font-weight:400;font-style:italic;font-display:swap}
-@font-face{font-family:'PT Sans';src:url(assets/fonts/PT_Sans-Web-Regular.ttf) format('truetype');font-weight:400;font-display:swap}
-@font-face{font-family:'PT Sans';src:url(assets/fonts/PT_Sans-Web-Bold.ttf) format('truetype');font-weight:700;font-display:swap}
-:root{--paper:#F6F4EE;--white:#fff;--ink:#121A2E;--muted:#5B6275;--line:#D9D5CA;--blue:#0B2A6F;--blue2:#1D4FB8;--sky:#E6ECF7;--red:#D7192D;--red2:#B3101F}
+@font-face{font-family:'Exo 2';src:url(assets/fonts/Exo2.ttf) format('truetype');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Exo 2';src:url(assets/fonts/Exo2-Italic.ttf) format('truetype');font-weight:100 900;font-style:italic;font-display:swap}
+:root{--blue:#0A2A78;--blue2:#1F4FD1;--sky:#E8EEFA;--red:#E0182D;--red2:#B80F21;--ink:#0B1430;--muted:#5A6482;--line:#DCE2EE;--bg:#fff;--light:#F3F5FA}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--paper);color:var(--ink);font:400 18px/1.55 'PT Sans',Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{display:block;max-width:100%}
+body{background:var(--bg);color:var(--ink);font:400 18px/1.55 'Exo 2',Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{display:block;max-width:100%}
 a{color:inherit}
 button,input,select,textarea{font:inherit;color:inherit}
-.wrap{max-width:1280px;margin:0 auto;padding:0 40px}
-h1,h2,h3{font-family:'PT Serif',Georgia,serif;font-weight:700;line-height:1.08;letter-spacing:-.01em}
-h2{font-size:clamp(34px,4.2vw,58px)}
-h3{font-size:24px;line-height:1.2}
-.lead{font-size:20px;color:var(--muted);max-width:640px}
-.kick{display:flex;align-items:center;gap:14px;font:700 13px/1 'PT Sans';letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:22px}
-.kick b{font-family:'PT Serif';font-size:15px;letter-spacing:0;color:var(--red)}
-.kick:after{content:"";flex:1;height:1px;background:var(--line);max-width:220px}
-.stripe{display:flex;height:6px}
-.stripe i{flex:1}
-.stripe i:nth-child(1){background:var(--blue)}
-.stripe i:nth-child(2){background:#fff}
-.stripe i:nth-child(3){background:var(--red)}
-section{padding:120px 0}
-.sec-head{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:end;margin-bottom:56px}
-.sec-head>*{min-width:0}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:2px;background:var(--red);color:#fff;font-weight:700;text-decoration:none;border:0;cursor:pointer;transition:background .2s,transform .2s}
-.btn:hover{background:var(--red2);transform:translateY(-1px)}
-.btn.ghost{background:transparent;color:var(--blue);box-shadow:inset 0 0 0 1.5px var(--blue)}
-.btn.ghost:hover{background:var(--blue);color:#fff}
-.gap{background:#FFF1B8;color:#6B5200;border-radius:3px;padding:0 5px;font-size:.86em;white-space:nowrap}
+.wrap{max-width:1320px;margin:0 auto;padding:0 40px}
+h1,h2,h3{font-family:'Exo 2';font-style:italic;font-weight:850;text-transform:uppercase;line-height:.98;letter-spacing:-.01em}
+h2{font-size:clamp(36px,4.6vw,68px)}
+h3{font-size:24px;line-height:1.1}
+.lead{font-size:20px;color:var(--muted);max-width:620px}
+.tag{display:inline-flex;align-items:center;gap:10px;font:800 13px/1 'Exo 2';letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:20px}
+.tag:before{content:"";width:28px;height:4px;background:var(--red);transform:skewX(-30deg)}
+section{position:relative}
+.pad{padding:130px 0}
+.head{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:end;margin-bottom:56px}
+.head>*{min-width:0}
+.btn{--c:var(--red);display:inline-flex;align-items:center;gap:12px;padding:17px 34px 17px 26px;background:var(--c);color:#fff;font:800 15px/1 'Exo 2';letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:0;cursor:pointer;clip-path:polygon(0 0,100% 0,calc(100% - 16px) 100%,0 100%);transition:background .2s,transform .2s}
+.btn:hover{--c:var(--red2);transform:translateX(3px)}
+.btn.ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.6);clip-path:none}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+.arr{width:18px;height:2px;background:currentColor;position:relative}
+.arr:after{content:"";position:absolute;right:0;top:-4px;width:9px;height:9px;border:2px solid currentColor;border-width:2px 2px 0 0;transform:rotate(45deg)}
+.gap{background:#FFF1B8;color:#6B5200;border-radius:3px;padding:0 5px;font-size:.84em;font-style:normal;font-weight:500;text-transform:none;letter-spacing:0}
 .gap:before{content:"нужны данные: "}
 .gap.ok{background:#E3F0FF;color:#0B3B7A}
 .gap.ok:before{content:"подтвердить: "}
 body.clean .gap{display:none}
 /* header */
-.top{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(246,244,238,.92);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
-.top.sc{border-color:var(--line)}
-.top .wrap{display:flex;align-items:center;gap:36px;height:72px}
-.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.top{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,box-shadow .3s}
+.top.sc{background:rgba(255,255,255,.96);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
+.top .wrap{display:flex;align-items:center;gap:34px;height:76px}
+.logo{display:flex;align-items:center;gap:14px;text-decoration:none}
 .logo img{height:26px}
-.logo span{font:700 12px/1.1 'PT Sans';letter-spacing:.14em;text-transform:uppercase;color:var(--red);border-left:1px solid var(--line);padding-left:12px}
+.logo .w{display:none}
+.top:not(.sc) .logo .w{display:block}
+.top:not(.sc) .logo .c{display:none}
+.logo span{font:800 italic 12px/1.1 'Exo 2';letter-spacing:.12em;text-transform:uppercase;color:var(--red);padding-left:14px;border-left:1px solid rgba(128,140,170,.4)}
+.top:not(.sc) .logo span{color:#fff}
 .nav{display:flex;gap:26px;margin-left:auto}
-.nav a{text-decoration:none;font-size:16px;color:var(--muted);transition:color .2s}
-.nav a:hover{color:var(--blue)}
-.top .btn{padding:11px 18px;font-size:15px}
-.cart-n{display:inline-grid;place-items:center;min-width:22px;height:22px;border-radius:11px;background:#fff;color:var(--red);font-size:13px;padding:0 6px}
-.prog{position:absolute;left:0;bottom:-1px;height:2px;background:var(--red);width:0}
+.nav a{text-decoration:none;font-weight:600;font-size:15px;color:var(--muted);transition:color .2s}
+.top:not(.sc) .nav a{color:rgba(255,255,255,.85)}
+.nav a:hover{color:var(--red)!important}
+.top .btn{padding:12px 26px 12px 18px;font-size:13px}
+.cn{display:inline-grid;place-items:center;min-width:22px;height:22px;background:#fff;color:var(--red);font-size:12px;padding:0 6px;transform:skewX(-12deg)}
+.prog{position:absolute;left:0;bottom:0;height:3px;background:var(--red);width:0}
 /* hero */
-.hero{padding:132px 0 0;position:relative}
-.hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:stretch}
-.hero-grid>*{min-width:0}
-.hero h1{font-size:clamp(40px,4.5vw,66px);margin:8px 0 28px}
-.hero h1 em{font-style:italic;font-weight:400;color:var(--blue)}
-.hero h1 .ln{display:block;overflow:hidden}
-.hero h1 .ln>span{display:block;transform:translateY(105%);transition:transform 1s cubic-bezier(.2,.8,.2,1)}
+.hero{min-height:100vh;min-height:100svh;display:flex;align-items:stretch;background:var(--blue);color:#fff;overflow:hidden;position:relative}
+.hero-ph{position:absolute;inset:0 0 0 36%;overflow:hidden}
+.hero-ph img{width:100%;height:100%;object-fit:cover;object-position:28% 50%;transform:scale(1.12);transition:transform 2.4s cubic-bezier(.2,.8,.2,1)}
+.loaded .hero-ph img{transform:none}
+.hero-ph:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--blue) 0%,rgba(10,42,120,.55) 22%,rgba(10,42,120,0) 48%),linear-gradient(0deg,rgba(6,20,60,.55),rgba(6,20,60,0) 40%)}
+.hero-panel{position:absolute;inset:0 auto 0 0;width:60%;background:var(--blue);clip-path:polygon(0 0,100% 0,74% 100%,0 100%);transform:translateX(-12%);transition:transform 1.2s cubic-bezier(.7,0,.2,1)}
+.loaded .hero-panel{transform:none}
+.hero-stripe{position:absolute;inset:0;pointer-events:none}
+.hero-stripe i{position:absolute;top:-5%;bottom:-5%;transform-origin:top;transform:skewX(-14.5deg) scaleY(0);transition:transform 1.2s cubic-bezier(.7,0,.2,1) .4s}
+.hero-stripe i:nth-child(1){background:var(--red);width:16px;left:calc(60% * .9 + 6px)}
+.hero-stripe i:nth-child(2){background:#fff;width:5px;left:calc(60% * .9 + 34px);opacity:.8;transition-delay:.55s}
+.loaded .hero-stripe i{transform:skewX(-14.5deg) scaleY(1)}
+.hero .wrap{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;padding-top:110px;padding-bottom:170px;width:100%}
+.hero h1{font-size:clamp(40px,5vw,76px);max-width:700px;margin-bottom:28px}
+.hero h1 .ln{display:block;overflow:hidden;padding-right:.1em}
+.hero h1 .ln>span{display:block;transform:translateY(110%);transition:transform 1s cubic-bezier(.2,.8,.2,1)}
 .loaded .hero h1 .ln>span{transform:none}
-.hero h1 .ln:nth-child(2)>span{transition-delay:.1s}
-.hero h1 .ln:nth-child(3)>span{transition-delay:.2s}
-.hero .lead{margin-bottom:36px}
+.hero h1 .ln:nth-child(2)>span{transition-delay:.08s}
+.hero h1 .ln:nth-child(3)>span{transition-delay:.16s}
+.hero h1 em{color:#fff;background:linear-gradient(transparent 62%,var(--red) 62%,var(--red) 90%,transparent 90%)}
+.hero .lead{color:rgba(255,255,255,.82);max-width:520px;margin-bottom:36px}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
-.hero-facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border-top:1px solid var(--line)}
-.hero-facts div{padding:20px 18px 0 0}
-.hero-facts b{display:block;font:700 40px/1 'PT Serif';color:var(--blue)}
-.hero-facts span{font-size:15px;color:var(--muted)}
-.hero-photo{position:relative;min-height:600px;overflow:hidden;clip-path:inset(0 0 100% 0);transition:clip-path 1.2s cubic-bezier(.7,0,.2,1) .2s}
-.loaded .hero-photo{clip-path:inset(0)}
-.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;transform:scale(1.08);transition:transform 2.2s cubic-bezier(.2,.8,.2,1) .2s}
-.loaded .hero-photo img{transform:none}
-.hero-photo figcaption{position:absolute;left:0;bottom:0;background:var(--paper);padding:14px 18px 0 0;font-size:14px;color:var(--muted);max-width:80%}
-.hero-photo .badge{position:absolute;top:22px;right:22px;background:var(--blue);color:#fff;padding:16px 18px;font:700 14px/1.3 'PT Sans';letter-spacing:.06em;text-transform:uppercase;max-width:200px}
-.hero-photo .badge b{display:block;font:700 30px/1 'PT Serif';letter-spacing:0;text-transform:none;margin-bottom:6px}
-.who{margin-top:80px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--white)}
-.who .wrap{display:flex;align-items:center;gap:40px;padding-top:22px;padding-bottom:22px;flex-wrap:wrap}
-.who p{font:700 13px/1 'PT Sans';letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-.who ul{display:flex;flex-wrap:wrap;gap:10px 34px;list-style:none;font:400 20px/1.2 'PT Serif'}
-.who li:before{content:"·";color:var(--red);margin-right:10px}
-/* catalog */
-.tabs{display:flex;gap:0;border-bottom:1px solid var(--line);margin-bottom:36px;overflow-x:auto;scrollbar-width:none}
-.tabs::-webkit-scrollbar{display:none}
-.tab{background:none;border:0;padding:16px 22px;font:700 17px 'PT Sans';color:var(--muted);cursor:pointer;position:relative;white-space:nowrap}
-.tab:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--red);transform:scaleX(0);transition:transform .3s}
-.tab.on{color:var(--blue)}
-.tab.on:after{transform:none}
-.tab sup{font-size:12px;color:var(--red);margin-left:4px}
-.cat{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.card{background:var(--white);border:1px solid var(--line);display:flex;flex-direction:column;min-width:0;opacity:0;transform:translateY(16px);animation:cin .5s forwards}
-@keyframes cin{to{opacity:1;transform:none}}
-.card .ph{aspect-ratio:4/3;background:#fff;overflow:hidden;border-bottom:1px solid var(--line)}
-.card .ph img{width:100%;height:100%;object-fit:contain;padding:10px;transition:transform .6s}
-.card .ph.cover img{object-fit:cover;padding:0}
-.card:hover .ph img{transform:scale(1.04)}
-.card .bd{padding:22px 22px 18px;display:flex;flex-direction:column;flex:1}
-.card h3{font-size:21px;margin-bottom:12px}
-.spec{width:100%;border-collapse:collapse;font-size:15px;margin-bottom:18px}
-.spec td{padding:6px 0;border-top:1px dashed var(--line);vertical-align:top}
-.spec td:first-child{color:var(--muted);padding-right:12px;width:46%}
-.add{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--sky);border:0;padding:12px 14px;cursor:pointer;font-weight:700;color:var(--blue);transition:background .2s,color .2s;text-align:left}
-.add:hover{background:#d5def0}
-.add .pl{width:24px;height:24px;border-radius:50%;border:1.5px solid currentColor;display:grid;place-items:center;font-size:17px;line-height:1;transition:transform .3s}
+.arc{position:absolute;right:5%;top:16%;width:34%;height:60%;z-index:1;pointer-events:none;overflow:visible}
+.arc .draw{fill:none;stroke:#fff;stroke-width:3;stroke-linecap:round;stroke-dasharray:1200;stroke-dashoffset:1200;transition:stroke-dashoffset 2.4s cubic-bezier(.4,0,.2,1) .9s}
+.loaded .arc .draw{stroke-dashoffset:0}
+.arc text{fill:#fff;font:700 13px 'Exo 2';letter-spacing:.1em;text-transform:uppercase;opacity:0;transition:opacity .6s 2.6s}
+.loaded .arc text{opacity:.9}
+.arc circle{fill:var(--red);opacity:0;transition:opacity .4s 3s}
+.loaded .arc circle{opacity:1}
+.hero-cap{position:absolute;right:40px;top:96px;z-index:2;font-size:13px;color:rgba(255,255,255,.7)}
+.stats{position:absolute;left:0;right:0;bottom:0;z-index:3}
+.hero .stats .wrap{display:grid;grid-template-columns:repeat(3,1fr);padding:0 40px;flex-direction:row}
+.stat{background:#fff;color:var(--ink);padding:26px 30px 24px;position:relative;transform:translateY(100%);transition:transform .9s cubic-bezier(.2,.8,.2,1)}
+.loaded .stat{transform:none}
+.stat:nth-child(2){transition-delay:.1s;background:var(--light)}
+.stat:nth-child(3){transition-delay:.2s;background:var(--red);color:#fff}
+.stat b{display:block;font:900 italic 52px/1 'Exo 2';color:var(--blue);margin-bottom:6px}
+.stat:nth-child(3) b{color:#fff}
+.stat span{font-size:15px;color:var(--muted);display:block;max-width:300px}
+.stat:nth-child(3) span{color:rgba(255,255,255,.85)}
+/* roman */
+.rm{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch}
+.rm>*{min-width:0}
+.rm-ph{position:relative;min-height:620px;clip-path:polygon(0 0,100% 0,88% 100%,0 100%)}
+.rm-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.rm-ph figcaption{position:absolute;left:0;bottom:30px;background:var(--red);color:#fff;padding:14px 40px 14px 24px;font:800 italic 16px/1.2 'Exo 2';text-transform:uppercase;clip-path:polygon(0 0,100% 0,calc(100% - 16px) 100%,0 100%)}
+.rm-ph figcaption small{display:block;font:500 13px 'Exo 2';text-transform:none;opacity:.85;margin-top:3px}
+.rm-tx{padding:20px 0 20px 80px;display:flex;flex-direction:column;justify-content:center}
+.q{font:800 italic clamp(26px,2.6vw,40px)/1.12 'Exo 2';text-transform:uppercase;color:var(--blue);margin:8px 0 24px;position:relative}
+.q:before{content:"«";color:var(--red);position:absolute;left:-.55em;top:-.05em}
+.q-src{font-size:15px;color:var(--muted);margin-bottom:28px}
+.rm-tx>p.t{color:var(--muted);margin-bottom:28px;max-width:560px}
+.facts3{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:3px solid var(--blue)}
+.facts3 div{padding:18px 16px 0 0;min-width:0}
+.facts3 b{display:block;font:900 italic 30px/1 'Exo 2';color:var(--blue);margin-bottom:6px}
+.facts3 span{font-size:14px;color:var(--muted)}
+/* hall */
+#hall{background:var(--light);clip-path:polygon(0 70px,100% 0,100% 100%,0 100%);padding-top:180px}
+.dchips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.dchip{border:0;background:#fff;padding:14px 26px 14px 20px;font:800 italic 15px 'Exo 2';text-transform:uppercase;letter-spacing:.03em;cursor:pointer;clip-path:polygon(0 0,100% 0,calc(100% - 12px) 100%,0 100%);transition:background .25s,color .25s;color:var(--blue)}
+.dchip:hover{background:var(--sky)}
+.dchip.on{background:var(--blue);color:#fff}
+#catalog .dchip{background:#fff}
+#catalog .dchip.on{background:var(--blue)}
+.hall{display:grid;grid-template-columns:1fr 340px;gap:24px;align-items:start}
+.hall>*{min-width:0}
+.plan{background:#fff;padding:22px}
+.plan svg{width:100%;height:auto;display:block}
+.it{cursor:pointer;opacity:0;animation:drop .55s cubic-bezier(.2,.9,.3,1.2) forwards}
+@keyframes drop{from{opacity:0;transform:translateY(-14px)}to{opacity:1;transform:none}}
+.it rect{transition:filter .2s}
+.it:hover rect,.it.sel rect{filter:brightness(1.25)}
+.it.sel .hl{stroke:var(--red);stroke-width:4;fill:none}
+.it text{font:700 11px 'Exo 2';fill:#fff;pointer-events:none;text-anchor:middle;dominant-baseline:central}
+.plan-note{display:flex;justify-content:space-between;gap:16px;font-size:13px;color:var(--muted);margin-top:12px;flex-wrap:wrap}
+.side{background:#fff;padding:26px 26px 24px;position:sticky;top:96px}
+.side .tag{margin-bottom:12px}
+.side h3{font-size:22px;margin-bottom:6px}
+.side .ph{height:170px;margin:14px 0;display:flex;align-items:center;justify-content:center}
+.side .ph img{max-height:100%;object-fit:contain;mix-blend-mode:multiply}
+.spec{width:100%;border-collapse:collapse;font-size:14px;margin-bottom:16px}
+.spec td{padding:6px 0;border-top:1px solid var(--line);vertical-align:top}
+.spec td:first-child{color:var(--muted);padding-right:10px;width:44%}
+.side .row{display:flex;gap:8px;flex-wrap:wrap}
+.add{display:inline-flex;align-items:center;gap:10px;background:var(--sky);color:var(--blue);border:0;padding:11px 18px;font:800 13px 'Exo 2';text-transform:uppercase;letter-spacing:.05em;cursor:pointer;transition:background .2s,color .2s}
+.add:hover{background:#d4def3}
 .add.on{background:var(--blue);color:#fff}
-.add.on .pl{transform:rotate(45deg)}
+.lst{list-style:none;margin-top:16px;border-top:1px solid var(--line)}
+.lst li{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;cursor:pointer}
+.lst li b{color:var(--red);font-weight:800;white-space:nowrap}
+.lst li:hover{color:var(--blue)}
 /* scheme */
-#scheme{background:var(--blue);color:#fff;position:relative;overflow:hidden}
-#scheme .kick{color:#9DB4E8}
-#scheme .kick:after{background:rgba(255,255,255,.2)}
-#scheme .lead{color:#C2CFEC}
+#scheme{background:var(--blue);color:#fff;clip-path:polygon(0 0,100% 70px,100% 100%,0 100%);padding-top:180px}
+#scheme .lead{color:#B9C8EE}
+#scheme .tag{color:#fff}
 .sch{display:grid;grid-template-columns:1.35fr .65fr;gap:56px;align-items:start}
 .sch>*{min-width:0}
-.sch-svg{background:#0A2463;border:1px solid rgba(255,255,255,.12);padding:28px}
 .sch-svg svg{width:100%;height:auto;display:block}
 .hs{cursor:pointer}
 .hs circle{fill:var(--red);transition:r .2s}
-.hs text{fill:#fff;font:700 13px 'PT Sans';text-anchor:middle;dominant-baseline:central;pointer-events:none}
-.hs:hover circle,.hs.on circle{r:15}
-.part{transition:opacity .35s,stroke .35s,fill .35s}
-.sch-svg.focus .part{opacity:.25}
+.hs text{fill:#fff;font:800 13px 'Exo 2';text-anchor:middle;dominant-baseline:central;pointer-events:none}
+.hs:hover circle,.hs.on circle{r:16}
+.part{transition:opacity .35s}
+.sch-svg.focus .part{opacity:.22}
 .sch-svg.focus .part.lit{opacity:1}
-.tables{opacity:0;transition:opacity .5s}
-.with-t .tables{opacity:1}
 .sch-svg:not(.with-t) .tables{opacity:0!important}
-.sch-side h3{font-size:30px;margin-bottom:14px;min-height:72px}
-.sch-side p{color:#C2CFEC;margin-bottom:22px;min-height:120px}
-.sch-list{list-style:none;border-top:1px solid rgba(255,255,255,.18)}
-.sch-list li{display:flex;gap:14px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.18);cursor:pointer;color:#C2CFEC;transition:color .2s,padding .3s}
-.sch-list li b{font:700 15px 'PT Serif';color:var(--red);width:20px}
+.sch-side h3{font-size:30px;margin-bottom:14px;min-height:64px}
+.sch-side p{color:#C9D5F2;margin-bottom:22px;min-height:130px}
+.sch-list{list-style:none;border-top:1px solid rgba(255,255,255,.2)}
+.sch-list li{display:flex;gap:14px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.2);cursor:pointer;color:#B9C8EE;transition:color .2s,padding .3s;font-weight:600}
+.sch-list li b{font:900 italic 16px 'Exo 2';color:var(--red);width:20px}
 .sch-list li.on{color:#fff;padding-left:8px}
-.toggle{display:flex;align-items:center;gap:12px;margin-top:26px;cursor:pointer;user-select:none}
+.toggle{display:flex;align-items:center;gap:12px;margin-top:24px;cursor:pointer;user-select:none;font-weight:600}
 .toggle input{display:none}
 .toggle i{width:46px;height:26px;border-radius:13px;background:rgba(255,255,255,.2);position:relative;transition:background .3s}
 .toggle i:after{content:"";position:absolute;left:3px;top:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:transform .3s}
 .toggle input:checked+i{background:var(--red)}
 .toggle input:checked+i:after{transform:translateX(20px)}
-.warr{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.warr{margin-top:70px;display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
 .warr>div{min-width:0}
-.warr .bar{height:8px;background:rgba(255,255,255,.12);margin:12px 0 8px;position:relative;overflow:hidden}
+.warr .bar{height:10px;background:rgba(255,255,255,.12);margin:12px 0 8px;position:relative;overflow:hidden;transform:skewX(-20deg)}
 .warr .bar i{position:absolute;inset:0 auto 0 0;background:#fff;width:0;transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
 .warr.in .bar i{width:var(--w)}
-.warr b{font:700 34px 'PT Serif'}
-.warr span{color:#C2CFEC;font-size:15px}
-/* disciplines */
-.disc-tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px}
-.chip{border:1.5px solid var(--line);background:var(--white);padding:12px 20px;border-radius:40px;cursor:pointer;font-weight:700;transition:all .25s}
-.chip:hover{border-color:var(--blue)}
-.chip.on{background:var(--blue);border-color:var(--blue);color:#fff}
-.disc{display:grid;grid-template-columns:.8fr 1.2fr;gap:0;background:var(--white);border:1px solid var(--line)}
-.disc>*{min-width:0}
-.disc-ph{position:relative;min-height:520px;overflow:hidden}
-.disc-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .5s}
-.disc-ph .cap{position:absolute;left:0;bottom:0;right:0;padding:60px 26px 22px;background:linear-gradient(transparent,rgba(10,20,50,.8));color:#fff;font-size:14px}
-.disc-bd{padding:40px 44px}
-.disc-bd h3{font-size:32px;margin-bottom:10px}
-.disc-bd>p{color:var(--muted);margin-bottom:24px}
-.kit{list-style:none;counter-reset:k;margin-bottom:26px}
-.kit li{counter-increment:k;display:grid;grid-template-columns:34px 56px 1fr;gap:14px;align-items:center;padding:12px 0;border-top:1px solid var(--line);opacity:0;transform:translateX(12px);animation:kin .45s forwards}
-@keyframes kin{to{opacity:1;transform:none}}
-.kit li:before{content:counter(k,decimal-leading-zero);font:700 15px 'PT Serif';color:var(--red)}
-.kit img{width:56px;height:42px;object-fit:contain;background:#fff;border:1px solid var(--line)}
-.kit b{display:block;font-size:17px}
-.kit span{font-size:14px;color:var(--muted)}
-.note{font-size:14px;color:var(--muted);margin-top:14px}
-/* track configurator */
-#track{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.trk{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px}
-.trk>*{min-width:0}
+.warr div:first-child .bar i{background:var(--red)}
+.warr b{font:900 italic 40px 'Exo 2'}
+.warr span{color:#B9C8EE;font-size:15px}
+/* track */
+.trk-top{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;margin-bottom:90px}
+.trk-top>*{min-width:0}
+.vid{position:relative;clip-path:polygon(0 0,100% 0,94% 100%,0 100%);background:#000;aspect-ratio:1280/620}
+.vid video{width:100%;height:100%;object-fit:cover}
+.vid .lbl{position:absolute;left:0;top:22px;background:var(--red);color:#fff;font:800 12px 'Exo 2';letter-spacing:.12em;text-transform:uppercase;padding:8px 22px 8px 14px;clip-path:polygon(0 0,100% 0,calc(100% - 10px) 100%,0 100%)}
+.feats{list-style:none;counter-reset:f}
+.feats li{counter-increment:f;display:grid;grid-template-columns:46px 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line)}
+.feats li:before{content:counter(f,decimal-leading-zero);font:900 italic 22px/1.2 'Exo 2';color:var(--red)}
+.feats b{display:block;font-weight:700}
+.feats span{font-size:15px;color:var(--muted)}
+.press{background:var(--ink);color:#fff;padding:50px 54px;display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center;clip-path:polygon(0 0,100% 0,100% 100%,30px 100%,0 calc(100% - 30px));margin-bottom:90px}
+.press>*{min-width:0}
+.press h3{font-size:34px;margin-bottom:14px}
+.press p{color:#AEB8D6;font-size:16px}
+.press .rng{margin-top:26px}
+.press .rng-l{display:flex;justify-content:space-between;font:700 13px 'Exo 2';text-transform:uppercase;letter-spacing:.08em;color:#AEB8D6;margin-top:10px}
+#pTxt{margin-top:18px;font:800 italic 19px/1.25 'Exo 2';text-transform:uppercase;color:#fff;min-height:52px}
+.press svg{width:100%;height:auto;overflow:visible}
+#jumper{animation:hop var(--t,1.1s) cubic-bezier(.45,0,.55,1) infinite}
+@keyframes hop{0%,100%{transform:translateY(0)}50%{transform:translateY(calc(var(--h,60px) * -1))}}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;background:rgba(128,140,170,.35);outline:none}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:30px;height:30px;background:var(--red);border:4px solid #fff;cursor:pointer;transform:skewX(-12deg)}
+input[type=range]::-moz-range-thumb{width:24px;height:24px;background:var(--red);border:4px solid #fff;cursor:pointer}
+.cfg{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+.cfg>*{min-width:0}
 .ctl{display:flex;flex-direction:column;gap:28px}
 .ctl label.t{display:flex;justify-content:space-between;font-weight:700;margin-bottom:12px}
-.ctl label.t output{font:700 22px 'PT Serif';color:var(--blue)}
-input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:4px;background:var(--line);outline:none;border-radius:2px}
-input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;border-radius:50%;background:var(--red);border:4px solid #fff;box-shadow:0 0 0 1.5px var(--red);cursor:pointer}
-input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:var(--red);border:4px solid #fff;cursor:pointer}
-.seg{display:flex;border:1.5px solid var(--blue)}
-.seg button{flex:1;background:none;border:0;padding:12px;cursor:pointer;font-weight:700;color:var(--blue);transition:background .2s,color .2s}
+.ctl label.t output{font:900 italic 24px 'Exo 2';color:var(--blue)}
+.seg{display:flex;gap:6px}
+.seg button{flex:1;background:var(--light);border:0;padding:13px;cursor:pointer;font:800 italic 15px 'Exo 2';color:var(--blue);transition:background .2s,color .2s;clip-path:polygon(0 0,100% 0,calc(100% - 10px) 100%,0 100%)}
 .seg button.on{background:var(--blue);color:#fff}
-.sw{display:flex;gap:10px;flex-wrap:wrap}
-.sw button{width:40px;height:40px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 1.5px var(--line);cursor:pointer;transition:box-shadow .2s,transform .2s}
-.sw button.on{box-shadow:0 0 0 2.5px var(--ink);transform:scale(1.08)}
+.sw{display:flex;gap:12px;flex-wrap:wrap}
+.sw button{width:42px;height:42px;border:3px solid #fff;box-shadow:0 0 0 1.5px var(--line);cursor:pointer;transform:skewX(-12deg);transition:box-shadow .2s}
+.sw button.on{box-shadow:0 0 0 3px var(--ink)}
 .chk{display:flex;gap:12px;align-items:flex-start;cursor:pointer}
 .chk input{width:20px;height:20px;accent-color:var(--blue);margin-top:3px;flex:none}
-.viz{background:var(--paper);border:1px solid var(--line);padding:30px;position:relative}
+.viz{background:var(--light);padding:28px}
 .viz svg{width:100%;height:auto;display:block;overflow:visible}
-#trkLogo{transition:opacity .4s}
-.sum{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line)}
-.sum div{padding:14px 14px 14px 0;border-bottom:1px solid var(--line);min-width:0}
-.sum dt{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
-.sum dd{font:700 19px 'PT Serif'}
-.kitbox{margin-top:22px;font-size:15px;color:var(--muted)}
+.sum{margin-top:22px;display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--blue)}
+.sum div{padding:12px 10px 0 0;min-width:0}
+.sum dt{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.sum dd{font:800 italic 18px 'Exo 2'}
+.kitbox{margin-top:18px;font-size:15px;color:var(--muted)}
 .kitbox b{color:var(--ink)}
-/* halls */
-.halls{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:150px;gap:16px}
-.halls figure{position:relative;overflow:hidden;background:#ddd;min-width:0}
-.halls img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
-.halls figure:hover img{transform:scale(1.04)}
-.halls figcaption{position:absolute;left:0;bottom:0;background:var(--paper);padding:10px 14px 0 0;font-size:14px;max-width:85%;line-height:1.35}
-.h1{grid-column:span 7;grid-row:span 3}
-.h2{grid-column:span 5;grid-row:span 2}
-.h3{grid-column:span 5;grid-row:span 3}
-.h4{grid-column:span 4;grid-row:span 2}
-.h5{grid-column:span 3;grid-row:span 2}
+/* case */
+#case{background:var(--blue);color:#fff;clip-path:polygon(0 70px,100% 0,100% 100%,0 100%);padding-top:190px}
+#case .tag{color:#fff}
+#case .lead{color:#B9C8EE}
+.tl{position:relative}
+.tl-line{position:absolute;left:50%;top:0;bottom:0;width:4px;background:rgba(255,255,255,.15);transform:translateX(-50%)}
+.tl-line i{position:absolute;left:0;right:0;top:0;height:0;background:var(--red)}
+.st{display:grid;grid-template-columns:1fr 1fr;gap:100px;margin-bottom:70px;position:relative;align-items:center}
+.st>*{min-width:0}
+.st:before{content:"";position:absolute;left:50%;top:50%;width:20px;height:20px;background:var(--blue);border:4px solid var(--red);transform:translate(-50%,-50%) rotate(45deg)}
+.st .d{font:900 italic 15px 'Exo 2';letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:8px}
+.st h3{font-size:30px;margin-bottom:12px}
+.st p{color:#C9D5F2}
+.st .im{position:relative;aspect-ratio:16/10;overflow:hidden;clip-path:polygon(0 0,100% 0,95% 100%,0 100%)}
+.st .im img{width:100%;height:100%;object-fit:cover}
+.st .big{font:900 italic clamp(70px,9vw,130px)/1 'Exo 2';color:#fff}
+.st .big small{font-size:.24em;color:#B9C8EE;display:block;letter-spacing:.06em;margin-top:8px;text-transform:uppercase}
+.st:nth-child(odd) .tx{order:2}
+.mini svg{width:100%;height:auto}
+/* voices */
+.fed{display:grid;grid-template-columns:1.05fr .95fr;background:var(--light);margin-bottom:24px}
+.fed>*{min-width:0}
+.fed-ph{position:relative;min-height:540px}
+.fed-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 30%}
+.play{position:absolute;left:24px;bottom:24px;width:68px;height:68px;background:var(--red);display:grid;place-items:center;clip-path:polygon(0 0,100% 0,calc(100% - 12px) 100%,0 100%);transition:transform .2s}
+.play:hover{transform:scale(1.06)}
+.play:after{content:"";border-left:18px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:4px}
+.fed-tx{padding:54px}
+.fed-tx h3{font-size:34px;margin-bottom:8px}
+.fed-tx .org{color:var(--muted);margin-bottom:26px}
+.creds{list-style:none}
+.creds li{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:baseline;padding:14px 0;border-top:1px solid var(--line)}
+.creds li b{font:900 italic 26px/1 'Exo 2';color:var(--blue);min-width:92px}
+.voices2{display:grid;grid-template-columns:1.25fr .75fr;gap:24px}
+.voices2>*{min-width:0}
+.de{display:grid;grid-template-columns:.9fr 1.1fr;background:var(--blue);color:#fff}
+.de>*{min-width:0}
+.de-ph{position:relative;min-height:300px}
+.de-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.de-tx{padding:36px}
+.de-tx blockquote{font:700 italic 22px/1.3 'Exo 2';margin:10px 0 18px}
+.de-tx cite{font-style:normal;color:#B9C8EE;font-size:15px}
+.de .tag,.bar2 .tag{color:#fff;margin-bottom:8px}
+.bar2 .tag:before{background:#fff}
+.bar2{background:var(--red);color:#fff;padding:36px;display:flex;flex-direction:column;justify-content:space-between;gap:20px}
+.bar2 h3{font-size:26px;margin-bottom:8px}
+.bar2 p{color:rgba(255,255,255,.85);font-size:16px}
+.bar2 a{display:inline-flex;align-items:center;gap:12px;font:800 14px 'Exo 2';text-transform:uppercase;letter-spacing:.06em;text-decoration:none}
+/* band */
+.band{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:12px;margin-top:70px}
+.band figure{position:relative;height:360px;overflow:hidden;clip-path:polygon(28px 0,100% 0,calc(100% - 28px) 100%,0 100%);min-width:0}
+.band figure:first-child{clip-path:polygon(0 0,100% 0,calc(100% - 28px) 100%,0 100%)}
+.band figure:last-child{clip-path:polygon(28px 0,100% 0,100% 100%,0 100%)}
+.band img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.band figure:hover img{transform:scale(1.05)}
+.band figcaption{position:absolute;left:40px;bottom:18px;right:40px;color:#fff;font:700 14px/1.3 'Exo 2';text-shadow:0 1px 8px rgba(0,0,0,.6)}
+/* catalog */
+#catalog{background:var(--light)}
+.ctabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:30px}
+.cat{display:grid;grid-template-columns:1fr 500px;gap:50px;align-items:start}
+.cat>*{min-width:0}
+.rows{list-style:none;border-top:2px solid var(--ink)}
+.rw{display:grid;grid-template-columns:54px 1fr auto;gap:18px;align-items:center;padding:20px 6px;border-bottom:1px solid var(--line);cursor:pointer;transition:background .25s,padding .3s;opacity:0;animation:cin .45s forwards}
+@keyframes cin{from{opacity:0;transform:translateX(-10px)}to{opacity:1;transform:none}}
+.rw:hover,.rw.cur{background:#fff;padding-left:16px}
+.rw .n{font:900 italic 20px 'Exo 2';color:var(--red)}
+.rw h4{font:800 italic 21px/1.15 'Exo 2';text-transform:uppercase}
+.rw small{display:block;color:var(--muted);font-size:14px;margin-top:3px}
+.pl{width:40px;height:40px;display:grid;place-items:center;background:var(--sky);color:var(--blue);font-size:22px;font-weight:700;border:0;cursor:pointer;transition:background .2s,transform .3s}
+.pl.on{background:var(--blue);color:#fff;transform:rotate(45deg)}
+.rw .mob{display:none}
+.prev{position:sticky;top:100px;background:#fff;padding:30px;overflow:hidden}
+.prev:before{content:"";position:absolute;right:-80px;top:-40px;width:260px;height:140%;background:var(--sky);transform:skewX(-14deg)}
+.prev>*{position:relative}
+.prev .ph{height:300px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.prev .ph img{max-height:100%;object-fit:contain;mix-blend-mode:multiply;transition:opacity .25s}
+.prev h3{font-size:26px;margin-bottom:14px}
 /* docs */
-.docs{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:2px solid var(--blue)}
-.doc{padding:28px 24px 30px 0;border-right:1px solid var(--line);min-width:0}
-.doc+.doc{padding-left:24px}
-.doc:last-child{border-right:0}
-.doc .n{font:700 46px/1 'PT Serif';color:var(--red);margin-bottom:18px}
-.doc h3{font-size:21px;margin-bottom:10px}
-.doc p{font-size:16px;color:var(--muted)}
-.paper{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.paper>*{min-width:0}
-.sheet{background:#fff;border:1px solid var(--line);padding:34px 36px;font-size:15px;box-shadow:12px 12px 0 var(--sky);position:relative}
-.sheet h4{font:700 20px 'PT Serif';margin-bottom:4px}
-.sheet .sub{color:var(--muted);margin-bottom:18px;font-size:14px}
-.sheet table{width:100%;border-collapse:collapse}
-.sheet td{padding:8px 0;border-top:1px solid var(--line);vertical-align:top}
-.sheet td:last-child{text-align:right;font-weight:700;padding-left:10px}
-.sheet .stamp{position:absolute;right:26px;top:26px;width:86px;height:86px;border:2px solid var(--red);border-radius:50%;color:var(--red);display:grid;place-items:center;text-align:center;font:700 11px/1.2 'PT Sans';letter-spacing:.08em;transform:rotate(-12deg);opacity:.85}
-.steps{list-style:none;counter-reset:s}
-.steps li{counter-increment:s;display:grid;grid-template-columns:52px 1fr;gap:16px;padding:16px 0;border-top:1px solid var(--line)}
-.steps li:before{content:counter(s);font:700 30px/1 'PT Serif';color:var(--blue)}
-.steps b{display:block;margin-bottom:2px}
-.steps span{color:var(--muted);font-size:16px}
-/* founder + reviews */
-#people{background:var(--sky)}
-.pp{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.pp>*{min-width:0}
-.quote{background:#fff;padding:40px;border-top:4px solid var(--red)}
-.quote blockquote{font:400 italic 26px/1.35 'PT Serif';margin-bottom:24px}
-.quote .gap{white-space:normal}
-.quote cite{font-style:normal;color:var(--muted);font-size:15px}
-.quote cite b{display:block;color:var(--ink);font-size:17px}
-.rev{background:#fff;padding:32px 36px;display:flex;flex-direction:column;gap:12px}
-.rev+.rev{margin-top:24px}
-.rev .tag{font:700 12px 'PT Sans';letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
-.rev h3{font-size:22px}
-.rev p{color:var(--muted);font-size:16px}
+.docs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:90px}
+.doc{background:var(--light);padding:30px 26px 32px;clip-path:polygon(0 0,calc(100% - 30px) 0,100% 30px,100% 100%,0 100%);position:relative;transition:transform .3s;min-width:0}
+.doc:hover{transform:translateY(-4px)}
+.doc:after{content:"";position:absolute;right:0;top:0;width:30px;height:30px;background:var(--red)}
+.doc .n{font:900 italic 44px/1 'Exo 2';color:var(--blue);margin-bottom:20px}
+.doc h3{font-size:20px;margin-bottom:10px}
+.doc p{font-size:15px;color:var(--muted)}
+.gw{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start}
+.gw>*{min-width:0}
+.gsteps{display:grid;grid-template-columns:repeat(3,1fr)}
+.gs{padding:26px 24px 26px 0;border-top:4px solid var(--blue);min-width:0}
+.gs:nth-child(3){border-color:var(--red)}
+.gs b{display:block;font:900 italic 18px/1.2 'Exo 2';text-transform:uppercase;margin:10px 0 8px}
+.gs span{font-size:15px;color:var(--muted)}
+.gs i{font:900 italic 14px 'Exo 2';color:var(--red)}
+.pdf{margin-top:80px;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:30px;padding:40px 70px 40px 50px;clip-path:polygon(0 0,100% 0,calc(100% - 40px) 100%,0 100%)}
+.pdf h3{font-size:30px}
+.pdf p{color:#B9C8EE;margin-top:6px}
 /* faq */
-.faq{max-width:900px}
+.faq{max-width:940px}
 .faq details{border-top:1px solid var(--line)}
 .faq details:last-child{border-bottom:1px solid var(--line)}
-.faq summary{list-style:none;cursor:pointer;padding:24px 50px 24px 0;font:700 22px/1.3 'PT Serif';position:relative}
+.faq summary{list-style:none;cursor:pointer;padding:24px 56px 24px 0;font:800 italic 21px/1.25 'Exo 2';text-transform:uppercase;position:relative}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary:after{content:"+";position:absolute;right:6px;top:20px;font:400 30px 'PT Sans';color:var(--red);transition:transform .3s}
+.faq summary:after{content:"+";position:absolute;right:6px;top:18px;font:400 34px 'Exo 2';color:var(--red);transition:transform .3s}
 .faq details[open] summary:after{transform:rotate(45deg)}
 .faq .a{overflow:hidden}
-.faq .a p{padding:0 0 26px;color:var(--muted);max-width:760px}
+.faq .a p{padding:0 0 26px;color:var(--muted);max-width:780px}
 /* form */
-#form{background:var(--ink);color:#fff}
-#form .kick{color:#9DB4E8}
-#form .kick:after{background:rgba(255,255,255,.2)}
-.fm{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px}
+#form{background:var(--ink);color:#fff;clip-path:polygon(0 70px,100% 0,100% 100%,0 100%);padding-top:190px}
+#form .tag{color:#fff}
+.fm{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}
 .fm>*{min-width:0}
-.fm .lead{color:#AEB6C8}
-.picked{margin-top:34px;border:1px solid rgba(255,255,255,.18);padding:22px 24px}
-.picked h4{font:700 13px 'PT Sans';letter-spacing:.14em;text-transform:uppercase;color:#9DB4E8;margin-bottom:12px}
+.fm .lead{color:#AEB8D6}
+.picked{margin-top:34px;border-left:4px solid var(--red);padding:6px 0 6px 22px}
+.picked h4{font:800 13px 'Exo 2';letter-spacing:.14em;text-transform:uppercase;color:#AEB8D6;margin-bottom:10px}
 .picked ul{list-style:none}
 .picked li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid rgba(255,255,255,.1);font-size:16px}
-.picked li button{background:none;border:0;color:#AEB6C8;cursor:pointer;font-size:20px;line-height:1}
-.picked .empty{color:#AEB6C8;font-size:15px}
-form .row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.picked li button{background:none;border:0;color:#AEB8D6;cursor:pointer;font-size:20px;line-height:1}
+.picked .empty{color:#AEB8D6;font-size:15px}
+form .row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
 form .row>*{min-width:0}
-.f label{display:block;font-size:14px;color:#AEB6C8;margin-bottom:6px}
-.f input,.f select,.f textarea{width:100%;background:transparent;border:0;border-bottom:1.5px solid rgba(255,255,255,.3);padding:10px 0;color:#fff;outline:none;transition:border-color .2s}
+.f label{display:block;font-size:14px;color:#AEB8D6;margin-bottom:6px}
+.f input,.f select,.f textarea{width:100%;background:rgba(255,255,255,.05);border:0;border-bottom:2px solid rgba(255,255,255,.25);padding:12px 14px;color:#fff;outline:none;transition:border-color .2s}
 .f select option{color:var(--ink)}
 .f input:focus,.f select:focus,.f textarea:focus{border-color:var(--red)}
-.f textarea{resize:vertical;min-height:90px}
-.full{margin-bottom:16px}
-.agree{font-size:13px;color:#8C95AA;margin:18px 0 24px}
-.sent{display:none;padding:40px;border:1px solid rgba(255,255,255,.2)}
-.sent h3{font-size:30px;margin-bottom:10px}
-.sent p{color:#AEB6C8}
+.f textarea{resize:vertical;min-height:96px}
+.full{margin-bottom:18px}
+.agree{font-size:13px;color:#7F89A8;margin:16px 0 24px}
+.sent{display:none;padding:40px;border-left:4px solid var(--red);background:rgba(255,255,255,.05)}
+.sent h3{font-size:32px;margin-bottom:10px}
+.sent p{color:#AEB8D6}
 form.done{display:none}
 form.done+.sent{display:block}
-footer{background:var(--ink);color:#8C95AA;border-top:1px solid rgba(255,255,255,.1);padding:34px 0;font-size:14px}
+footer{background:var(--ink);color:#7F89A8;padding:40px 0;font-size:14px;border-top:1px solid rgba(255,255,255,.08)}
 footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-#gapsToggle{position:fixed;left:20px;bottom:20px;z-index:60;background:#fff;border:1px solid var(--line);padding:10px 14px;font-size:13px;cursor:pointer;border-radius:2px;transition:opacity .3s}
+#gapsToggle{position:fixed;left:20px;bottom:20px;z-index:60;background:#fff;border:1px solid var(--line);padding:10px 14px;font-size:13px;cursor:pointer;transition:opacity .3s}
 body.at-top #gapsToggle{opacity:0;pointer-events:none}
-#cartFab{position:fixed;right:20px;bottom:20px;z-index:60;display:none}
-#cartFab.show{display:inline-flex}
-/* reveal */
-[data-r]{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}
+[data-r]{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}
 [data-r].in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}[data-r]{opacity:1;transform:none}.hero h1 .ln>span{transform:none}.hero-photo{clip-path:none}.card,.kit li{opacity:1;transform:none}}
-@media (max-width:1100px){.nav{display:none}.cat{grid-template-columns:1fr 1fr}.docs{grid-template-columns:1fr 1fr}.doc:nth-child(2){border-right:0}.doc:nth-child(3){padding-left:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}[data-r]{opacity:1;transform:none}.hero h1 .ln>span,.stat,.hero-panel{transform:none}.it,.rw{opacity:1}.arc .draw{stroke-dashoffset:0}}
+@media (max-width:1100px){.nav{display:none}.hall,.cat{grid-template-columns:1fr}.side,.prev{position:static}.docs{grid-template-columns:1fr 1fr}}
 @media (max-width:820px){
+.band{grid-template-columns:1fr;gap:8px}
+.band figure,.band figure:first-child,.band figure:last-child{height:240px;clip-path:none}
 body{font-size:17px}
 .wrap{padding:0 16px}
-section{padding:80px 0}
-.sec-head,.hero-grid,.sch,.disc,.trk,.paper,.pp,.fm{grid-template-columns:1fr;gap:32px}
-.sec-head{margin-bottom:36px}
-.hero{padding-top:100px}
-.hero-photo{min-height:360px}
-.hero-photo .badge{top:12px;right:12px;padding:12px 14px}
-.hero-photo .badge b{font-size:24px}
-.hero-facts{grid-template-columns:1fr 1fr}
-.hero-facts div:nth-child(2){grid-column:span 2;order:3}
-.hero-facts b{font-size:30px}
-.hero-facts span{font-size:13px}
-.gap{white-space:normal}
-.kick{letter-spacing:.1em;font-size:12px}
-.kick:after{display:none}
-.who{margin-top:48px}
-.who ul{font-size:17px;gap:8px 20px}
-.top .wrap{gap:12px;height:62px}
+.pad{padding:84px 0}
+.head,.rm,.sch,.trk-top,.press,.cfg,.fed,.voices2,.de,.gw,.fm{grid-template-columns:1fr;gap:28px}
+.head{margin-bottom:34px}
+.top .wrap{height:64px;gap:12px}
 .logo span{display:none}
-.top .btn{margin-left:auto;padding:10px 14px;font-size:14px}
-.cat{grid-template-columns:1fr}
-.sch-svg{padding:12px}
+.top .btn{margin-left:auto}
+.hero{min-height:auto;flex-direction:column}
+.hero-ph{position:relative;inset:auto;height:52vh;min-height:320px;order:2}
+.hero-ph img{object-position:20% 50%}
+.hero-ph:after{background:linear-gradient(180deg,var(--blue) 0%,rgba(10,42,120,0) 30%)}
+.hero-panel,.hero-stripe,.arc,.hero-cap{display:none}
+.hero .wrap{padding-top:100px;padding-bottom:36px}
+.stats{position:relative;order:3}
+.hero .stats .wrap{grid-template-columns:1fr;padding:0}
+.plan{overflow-x:auto}
+.plan svg{min-width:760px}
+.stat{padding:16px;display:flex;align-items:center;gap:14px}
+.stat b{font-size:32px;flex:none;min-width:118px;margin:0}
+.rm-ph{min-height:360px;clip-path:polygon(0 0,100% 0,100% 92%,0 100%)}
+.rm-tx{padding:10px 0 0 22px}
+.facts3{grid-template-columns:1fr}
+.facts3 div{padding:14px 0 0}
+#hall,#case,#form{clip-path:polygon(0 36px,100% 0,100% 100%,0 100%);padding-top:110px}
+#scheme{clip-path:polygon(0 0,100% 36px,100% 100%,0 100%);padding-top:110px}
+.plan{padding:8px}
+.dchip{padding:11px 20px 11px 14px;font-size:13px}
 .sch-side h3,.sch-side p{min-height:0}
-.warr{grid-template-columns:1fr;gap:18px}
-.disc-ph{min-height:260px}
-.disc-bd{padding:26px 20px}
-.disc-bd h3{font-size:26px}
-.viz{padding:16px}
-.halls{grid-template-columns:1fr 1fr;grid-auto-rows:130px;gap:10px}
-.h1{grid-column:span 2;grid-row:span 2}
-.h2,.h3,.h4,.h5{grid-column:span 1;grid-row:span 1}
-.halls figcaption{font-size:12px;padding:6px 8px 0 0}
-.halls figure:not(.h1) figcaption{display:none}
+.warr{grid-template-columns:1fr;gap:16px}
+.press{padding:30px 20px}
+.press h3{font-size:26px}
+.viz{padding:14px}
+.sum{grid-template-columns:1fr 1fr}
+.tl-line{left:10px}
+.st{grid-template-columns:1fr;gap:20px;padding-left:36px;margin-bottom:50px}
+.st:before{left:10px;top:8px}
+.st:nth-child(odd) .tx{order:0}
+.fed-ph{min-height:300px}
+.fed-tx{padding:28px 20px}
+.fed-tx h3{font-size:26px}
+.creds li b{font-size:20px;min-width:70px}
+.de-tx,.bar2{padding:26px 20px}
+.rw{grid-template-columns:34px 1fr auto;gap:10px}
+.rw h4{font-size:17px}
+.rw .mob{display:block;grid-column:1/-1;max-height:0;overflow:hidden;transition:max-height .4s}
+.rw.cur .mob{max-height:520px}
+.rw .mob img{max-height:180px;margin:12px auto;mix-blend-mode:multiply}
+.prev{display:none}
 .docs{grid-template-columns:1fr}
-.doc,.doc+.doc{padding:24px 0;border-right:0;border-bottom:1px solid var(--line)}
-.sheet{padding:24px 20px}
-.sheet .stamp{width:64px;height:64px;font-size:9px;right:14px;top:14px}
-.quote{padding:28px 22px}
-.quote blockquote{font-size:21px}
-.rev{padding:24px 22px}
-.faq summary{font-size:19px}
+.gsteps{grid-template-columns:1fr}
+.pdf{flex-direction:column;align-items:flex-start;padding:30px 24px;clip-path:polygon(0 0,100% 0,calc(100% - 20px) 100%,0 100%)}
+.faq summary{font-size:17px}
 form .row{grid-template-columns:1fr}
-.chip{padding:10px 14px;font-size:15px}
 }
 </style>
 </head>
 <body class="at-top">
 <header class="top" id="top">
   <div class="wrap">
-    <a class="logo" href="#"><img src="assets/img/logo.svg" alt="UNITRAMP"><span>Спортивное<br>оборудование</span></a>
-    <nav class="nav">
-      <a href="#catalog">Каталог</a><a href="#scheme">Батут 5×3</a><a href="#pick">Подбор</a><a href="#track">Дорожка</a><a href="#docs">Документы</a><a href="#faq">Вопросы</a>
-    </nav>
-    <a class="btn" href="#form">Заявка <span class="cart-n" id="cartN">0</span></a>
+    <a class="logo" href="#"><img class="c" src="assets/img/logo.svg" alt="UNITRAMP"><img class="w" src="assets/img/logo-white.svg" alt="UNITRAMP"><span>Спорт</span></a>
+    <nav class="nav"><a href="#hall">Зал</a><a href="#scheme">Батут 5×3</a><a href="#track">Дорожка</a><a href="#case">Кейс</a><a href="#catalog">Каталог</a><a href="#docs">Закупка</a></nav>
+    <a class="btn" href="#form">Заявка <span class="cn" id="cartN">0</span></a>
   </div>
   <div class="prog" id="prog"></div>
 </header>
 
 <section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="kick"><b>№ 4</b>Для спортивных школ и федераций</div>
-      <h1><span class="ln"><span>Батуты, дорожки</span></span><span class="ln"><span>и маты для зала,</span></span><span class="ln"><span><em>где растят спортсменов</em></span></span></h1>
-      <p class="lead">Собственное производство UNITRAMP с 2014 года. Снаряды по размерам соревновательного стандарта, паспорта и сертификаты для закупки, доставка по России.</p>
-      <div class="hero-cta">
-        <a class="btn" href="#pick">Подобрать для дисциплины</a>
-        <a class="btn ghost" href="#form">Запросить PDF-каталог</a>
-      </div>
-      <div class="hero-facts">
-        <div><b data-c="36">0</b><span>месяцев гарантии на раму батута</span></div>
-        <div><b>4,26×2,13</b><span>метра сетка батута 5×3</span></div>
-        <div><b data-c="50">0</b><span>метров: предел длины дорожки</span></div>
-      </div>
-    </div>
-    <figure class="hero-photo">
-      <img src="assets/img/g-arena.jpg" alt="Монтаж спортивного батута UNITRAMP на соревнованиях">
-      <div class="badge"><b>5×3 м</b>Батут для прыжков на батуте</div>
-      <figcaption>Сборка батута 5×3 перед стартом соревнований <span class="gap ok">турнир и город</span></figcaption>
-    </figure>
+  <div class="hero-ph"><img src="assets/img/v-spot.jpg" alt="Тренер страхует гимнастку на акробатической дорожке UNITRAMP"></div>
+  <div class="hero-panel"></div>
+  <div class="hero-stripe"><i></i><i></i></div>
+  <svg class="arc" viewBox="0 0 500 400" preserveAspectRatio="none" aria-hidden="true">
+    <path class="draw" d="M40 360 C 120 40, 330 20, 460 330"/>
+    <circle cx="40" cy="360" r="7"/><circle cx="460" cy="330" r="7"/>
+    <text x="10" y="392">толчок</text><text x="210" y="70">полёт</text><text x="400" y="372">приземление</text>
+  </svg>
+  <div class="hero-cap">Кадр из видео UNITRAMP: тренировка на дорожке</div>
+  <div class="wrap">
+    <div class="tag" style="color:#fff">Спортивное оборудование UNITRAMP</div>
+    <h1><span class="ln"><span>Снаряды для тех,</span></span><span class="ln"><span>кто готовит</span></span><span class="ln"><span><em>спортсменов</em></span></span></h1>
+    <p class="lead">Батуты 5×3, надувные акробатические дорожки, маты и сетки для СШОР, федераций и клубов. Собственное производство с 2014 года, документы для закупки, поставки по России, в СНГ и Европу.</p>
+    <div class="hero-cta"><a class="btn" href="#hall">Собрать зал <span class="arr"></span></a><a class="btn ghost" href="#form">PDF-каталог</a></div>
   </div>
-  <div class="who">
+  <div class="stats">
     <div class="wrap">
-      <p>Кто покупает</p>
-      <ul><li>спортивные школы и СШОР</li><li>федерации</li><li>цирковые училища</li><li>батутные и экстрим-центры</li><li>школьные залы</li></ul>
+      <div class="stat"><b data-t="5:03">0:00</b><span>надув дорожки 10 м, замер секундомером на установке</span></div>
+      <div class="stat"><b>20–25 мин</b><span>установка 3 батутов и 4 дорожек бригадой из 4 человек</span></div>
+      <div class="stat"><b data-c="36">0</b><span>месяцев гарантии на раму батута 5×3</span></div>
     </div>
   </div>
 </section>
 
-<section id="catalog">
-  <div class="wrap">
-    <div class="sec-head">
-      <div><div class="kick"><b>§ 1</b>Каталог</div><h2>Всё для зала в одной заявке</h2></div>
-      <p class="lead">Характеристики взяты из паспортов изделий. Отметьте нужное: позиции попадут в заявку, и мы пришлём коммерческое предложение с ценами и сроками.</p>
+<section id="roman" class="pad">
+  <div class="wrap rm">
+    <figure class="rm-ph" data-r>
+      <img src="assets/img/v-roman.jpg" alt="Роман Сотников в спортивном зале" loading="lazy">
+      <figcaption>Роман Сотников<small>основатель UNITRAMP, кадр из видеообзора</small></figcaption>
+    </figure>
+    <div class="rm-tx" data-r>
+      <div class="tag">Свой человек в зале</div>
+      <p class="q">Это моя любимая секция, любимый зал, в котором я долгие годы занимался и тренировался</p>
+      <p class="q-src">Роман Сотников о поставке дорожек в зал «Спартак» Федерации прыжков на батуте Новосибирской области, 20 апреля 2018</p>
+      <p class="t">Поэтому снаряды делаем под тренировочный процесс. Дорожка не ездит по ковру, держит давление без подкачки и надувается за пять минут. Батут собирается без отдельной бригады монтажников. Оборудование проверяют перед каждой отправкой.</p>
+      <div class="facts3">
+        <div><b>2014</b><span>запуск собственного производства</span></div>
+        <div><b>РФ и СНГ</b><span>СДЮШОР, батутные залы, цирковые шоу</span></div>
+        <div><b>Германия</b><span>клуб спортивной акробатики в Лёррахе</span></div>
+      </div>
     </div>
-    <div class="tabs" id="tabs"></div>
-    <div class="cat" id="cat"></div>
   </div>
 </section>
 
-<section id="scheme">
+<section id="hall" class="pad">
   <div class="wrap">
-    <div class="sec-head">
-      <div><div class="kick"><b>§ 2</b>Батут 5×3 в разрезе</div><h2>Из чего собран соревновательный батут</h2></div>
-      <p class="lead">Нажмите на номер, чтобы увидеть узел. Размеры в рабочем положении, допуск ±50 мм.</p>
+    <div class="head">
+      <div><div class="tag">Зал целиком</div><h2>Зал под вашу дисциплину</h2></div>
+      <p class="lead">Выберите дисциплину, и снаряды встанут на план зала 36 × 18 м в масштабе. Нажмите на снаряд, чтобы увидеть характеристики и добавить его в заявку.</p>
+    </div>
+    <div class="dchips" id="dchips"></div>
+    <div class="hall">
+      <div class="plan">
+        <svg viewBox="-20 -28 1130 600" id="planSvg">
+          <defs>
+            <pattern id="g1" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#E3E8F2" stroke-width="1"/></pattern>
+            <pattern id="g5" width="150" height="150" patternUnits="userSpaceOnUse"><path d="M150 0H0V150" fill="none" stroke="#C9D2E4" stroke-width="1.2"/></pattern>
+            <pattern id="netp" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 3H6M3 0V6" stroke="#2B4A9A" stroke-width="1"/></pattern>
+          </defs>
+          <rect x="0" y="0" width="1080" height="540" fill="#FAFBFD"/>
+          <rect x="0" y="0" width="1080" height="540" fill="url(#g1)"/>
+          <rect x="0" y="0" width="1080" height="540" fill="url(#g5)"/>
+          <g fill="#BFD0F2"><rect x="90" y="-7" width="120" height="7"/><rect x="300" y="-7" width="120" height="7"/><rect x="510" y="-7" width="120" height="7"/><rect x="720" y="-7" width="120" height="7"/><rect x="930" y="-7" width="120" height="7"/></g>
+          <rect x="0" y="0" width="1080" height="540" fill="none" stroke="#0B1430" stroke-width="4"/>
+          <text x="540" y="-13" font-family="Exo 2" font-size="13" fill="#5A6482" text-anchor="middle">36 м · окна</text>
+          <text x="1100" y="270" font-family="Exo 2" font-size="13" fill="#5A6482" text-anchor="middle" transform="rotate(90 1100 270)">18 м</text>
+          <g id="items"></g>
+          <g transform="translate(0,566)" font-family="Exo 2" font-size="12" fill="#5A6482"><path d="M0 -8V0H150V-8" fill="none" stroke="#5A6482"/><text x="160" y="-2">5 м</text></g>
+        </svg>
+        <div class="plan-note"><span id="dDesc"></span><span>Схема, не проект. Расстановку под ваш зал сделаем по замерам.</span></div>
+      </div>
+      <aside class="side">
+        <div class="tag" id="sTag">Снаряд</div>
+        <h3 id="sName"></h3>
+        <div class="ph"><img id="sImg" src="assets/img/p-tramp-t.jpg" alt=""></div>
+        <table class="spec" id="sSpec"></table>
+        <div class="row"><button class="add" id="sAdd">+ в заявку</button><button class="add" id="hallAdd">Весь зал в заявку</button></div>
+        <ul class="lst" id="sList"></ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="scheme" class="pad">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="tag">Батут 5×3 в разрезе</div><h2>Из чего собран соревновательный батут</h2></div>
+      <p class="lead">Нажмите на номер. Размеры в рабочем положении, допуск ±50 мм. Рама повторяет олимпийский каркас.</p>
     </div>
     <div class="sch">
       <div class="sch-svg" id="schSvg">
         <svg viewBox="0 0 640 520" aria-label="Схема батута 5×3 сверху">
-          <defs>
-            <pattern id="net" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 4H8M4 0V8" stroke="#1F3B7A" stroke-width="1"/></pattern>
-          </defs>
+          <defs><pattern id="net" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 4H8M4 0V8" stroke="#2A4C9E" stroke-width="1"/></pattern></defs>
           <g class="tables part" data-p="5">
-            <rect x="225" y="10" width="190" height="62" fill="#1D4FB8" stroke="#fff" stroke-width="1.5"/>
-            <rect x="225" y="448" width="190" height="62" fill="#1D4FB8" stroke="#fff" stroke-width="1.5"/>
-            <text x="320" y="46" fill="#fff" font-size="13" text-anchor="middle" font-family="PT Sans">стол 175×260</text>
-            <text x="320" y="484" fill="#fff" font-size="13" text-anchor="middle" font-family="PT Sans">стол 175×260</text>
+            <rect x="225" y="10" width="190" height="62" fill="#1F4FD1" stroke="#fff" stroke-width="1.5"/>
+            <rect x="225" y="448" width="190" height="62" fill="#1F4FD1" stroke="#fff" stroke-width="1.5"/>
+            <text x="320" y="46" fill="#fff" font-size="13" text-anchor="middle" font-family="Exo 2">стол 175×260</text>
+            <text x="320" y="484" fill="#fff" font-size="13" text-anchor="middle" font-family="Exo 2">стол 175×260</text>
           </g>
           <g class="part" data-p="1"><rect x="60" y="90" width="520" height="340" fill="none" stroke="#fff" stroke-width="6"/></g>
-          <g class="part" data-p="4">
-            <rect x="66" y="96" width="508" height="328" fill="#2457C5"/>
-            <rect x="96" y="124" width="448" height="272" fill="#0A2463"/>
-          </g>
+          <g class="part" data-p="4"><rect x="66" y="96" width="508" height="328" fill="#2457C5"/><rect x="96" y="124" width="448" height="272" fill="#08205E"/></g>
           <g class="part" data-p="3" id="springs" stroke="#C9D3EA" stroke-width="2"></g>
           <g class="part" data-p="2">
-            <rect x="107" y="134" width="426" height="252" fill="#122C68"/>
+            <rect x="107" y="134" width="426" height="252" fill="#0E2B6E"/>
             <rect x="107" y="134" width="426" height="252" fill="url(#net)"/>
             <rect x="107" y="134" width="426" height="252" fill="none" stroke="#fff" stroke-width="1"/>
-            <path d="M295 260H345M320 235V285" stroke="#D7192D" stroke-width="5"/>
+            <path d="M295 260H345M320 235V285" stroke="#E0182D" stroke-width="5"/>
           </g>
-          <g font-family="PT Sans" font-size="13" fill="#9DB4E8">
-            <path d="M60 455H580" stroke="#9DB4E8" stroke-width="1" class="dim"/>
-            <path d="M60 449V461M580 449V461" stroke="#9DB4E8"/>
-            <text x="320" y="447" text-anchor="middle" class="dim">5 200 мм</text>
-            <path d="M600 90V430" stroke="#9DB4E8"/>
-            <path d="M594 90H606M594 430H606" stroke="#9DB4E8"/>
+          <g font-family="Exo 2" font-size="13" fill="#9DB4E8">
+            <path d="M60 455H580M60 449V461M580 449V461" stroke="#9DB4E8"/>
+            <text x="320" y="447" text-anchor="middle">5 200 мм</text>
+            <path d="M600 90V430M594 90H606M594 430H606" stroke="#9DB4E8"/>
             <text x="618" y="264" transform="rotate(90 618 264)" text-anchor="middle">3 100 мм</text>
           </g>
-          <g class="hs" data-p="1"><circle cx="60" cy="90" r="12"/><text x="60" y="90">1</text></g>
-          <g class="hs" data-p="2"><circle cx="420" cy="200" r="12"/><text x="420" y="200">2</text></g>
-          <g class="hs" data-p="3"><circle cx="101" cy="300" r="12"/><text x="101" y="300">3</text></g>
-          <g class="hs" data-p="4"><circle cx="560" cy="410" r="12"/><text x="560" y="410">4</text></g>
-          <g class="hs" data-p="5"><circle cx="415" cy="41" r="12"/><text x="415" y="41">5</text></g>
+          <g class="hs" data-p="1"><circle cx="60" cy="90" r="13"/><text x="60" y="90">1</text></g>
+          <g class="hs" data-p="2"><circle cx="420" cy="200" r="13"/><text x="420" y="200">2</text></g>
+          <g class="hs" data-p="3"><circle cx="101" cy="300" r="13"/><text x="101" y="300">3</text></g>
+          <g class="hs" data-p="4"><circle cx="560" cy="410" r="13"/><text x="560" y="410">4</text></g>
+          <g class="hs" data-p="5"><circle cx="415" cy="41" r="13"/><text x="415" y="41">5</text></g>
         </svg>
       </div>
       <div class="sch-side">
-        <h3 id="schT">Рама</h3>
+        <h3 id="schT"></h3>
         <p id="schD"></p>
         <ul class="sch-list" id="schL"></ul>
         <label class="toggle"><input type="checkbox" id="withT"><i></i>Показать страховочные столы</label>
@@ -446,351 +568,435 @@ form .row{grid-template-columns:1fr}
     </div>
     <div class="warr" data-r>
       <div><b>36 мес.</b><div class="bar"><i style="--w:100%"></i></div><span>гарантия на раму, кроме зацепов для пружин</span></div>
-      <div><b>12 мес.</b><div class="bar"><i style="--w:33%"></i></div><span>на сетку, при установке на оборудование UNITRAMP</span></div>
+      <div><b>12 мес.</b><div class="bar"><i style="--w:33%"></i></div><span>на сетку при установке на раму UNITRAMP</span></div>
       <div><b>6 мес.</b><div class="bar"><i style="--w:16.6%"></i></div><span>на пружины и страховочные маты</span></div>
     </div>
   </div>
 </section>
 
-<section id="pick">
+<section id="track" class="pad">
   <div class="wrap">
-    <div class="sec-head">
-      <div><div class="kick"><b>§ 3</b>Подбор по дисциплине</div><h2>Что нужно залу под вашу секцию</h2></div>
-      <p class="lead">Базовый набор, с которого начинают оснащение. Точный состав и количество согласуем с вашим тренером.</p>
-    </div>
-    <div class="disc-tabs" id="discTabs"></div>
-    <div class="disc">
-      <div class="disc-ph"><img id="discImg" src="assets/img/g-arena2.jpg" alt=""><div class="cap" id="discCap"></div></div>
-      <div class="disc-bd">
-        <h3 id="discT"></h3>
-        <p id="discD"></p>
-        <ol class="kit" id="kit"></ol>
-        <button class="btn" id="kitAdd">Добавить набор в заявку</button>
-        <p class="note">Набор составлен по каталогу UNITRAMP <span class="gap ok">состав наборов с Романом</span></p>
+    <div class="trk-top">
+      <div class="vid" data-r>
+        <video src="assets/video/track.mp4" poster="assets/img/v-trackpos.jpg" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="lbl">Тренировка на дорожке UNITRAMP</span>
+      </div>
+      <div data-r>
+        <div class="tag">Акробатическая дорожка</div>
+        <h2 style="margin-bottom:22px">Как устроена дорожка</h2>
+        <ul class="feats">
+          <li><div><b>Три разметочные линии по 5 см</b><span>Сверху и снизу: дорожку можно перевернуть и работать на второй стороне.</span></div></li>
+          <li><div><b>Велькро 10 см бесплатно</b><span>По периметру снизу держит дорожку на ковре, на торцах соединяет дорожки в одну линию.</span></div></li>
+          <li><div><b>Ручки и клапаны с двух сторон</b><span>Неважно, где розетка. Перевернуть и перенести дорожку могут четыре человека.</span></div></li>
+          <li><div><b>87 кг весь комплект 10 м</b><span>Дорожка, компрессор, ремкомплект и сумка.</span></div></li>
+        </ul>
       </div>
     </div>
-  </div>
-</section>
 
-<section id="track">
-  <div class="wrap">
-    <div class="sec-head">
-      <div><div class="kick"><b>§ 4</b>Акробатическая дорожка</div><h2>Соберите дорожку под свой зал</h2></div>
-      <p class="lead">Дорожки шьём под заказ: длина от 5 до 50 метров, цвет боковины и логотип школы. Шов термический, давление держит без подкачки.</p>
+    <div class="press" data-r>
+      <div>
+        <div class="tag" style="color:#fff">Давление под группу</div>
+        <h3>Одна дорожка для детей и для мастеров</h3>
+        <p>Жёсткость регулируется надувом. Об этом говорят и тренер из Германии, и Роман в обзоре дорожки.</p>
+        <div class="rng"><input type="range" id="pr" min="0" max="100" value="25" aria-label="Давление в дорожке"><div class="rng-l"><span>Детская группа</span><span>Мастера</span></div></div>
+        <div id="pTxt"></div>
+      </div>
+      <svg viewBox="0 0 520 250" aria-hidden="true">
+        <rect x="0" y="232" width="520" height="18" fill="#16234A"/>
+        <path id="dip" fill="#2457C5"/>
+        <path id="dipTop" fill="none" stroke="#fff" stroke-width="2" opacity=".6"/>
+        <g id="jumper"><g id="jg">
+          <circle cx="260" cy="110" r="11" fill="#fff"/>
+          <path d="M260 121V158M260 131L242 116M260 131L278 116M260 158L250 194M260 158L270 194" stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none"/>
+        </g></g>
+        <text x="20" y="20" fill="#AEB8D6" font-family="Exo 2" font-size="13">вид сбоку, прогиб под спортсменом</text>
+      </svg>
     </div>
-    <div class="trk">
+
+    <div class="head" style="margin-bottom:40px">
+      <div><div class="tag">Конструктор</div><h2>Соберите дорожку под свой зал</h2></div>
+      <p class="lead">Шьём под заказ: длина от 5 до 50 м, высота 0,2 или 0,3 м, цвет боковины, логотип школы. Шов термический.</p>
+    </div>
+    <div class="cfg">
       <div class="ctl">
         <div><label class="t" for="len">Длина <output id="lenO">10 м</output></label><input type="range" id="len" min="5" max="50" step="1" value="10"></div>
         <div><label class="t">Высота</label><div class="seg" id="thick"><button data-v="0.2" class="on">0,2 м</button><button data-v="0.3">0,3 м</button></div></div>
         <div><label class="t">Цвет боковины</label><div class="sw" id="sw"></div></div>
         <div style="display:flex;flex-direction:column;gap:14px">
           <label class="chk"><input type="checkbox" id="logo"><span>Логотип школы на поверхности <span style="color:var(--muted);font-size:15px">(цена зависит от размера)</span></span></label>
-          <label class="chk"><input type="checkbox" id="velcro" checked><span>Лента велькро для крепления к полу и другим дорожкам</span></label>
+          <label class="chk"><input type="checkbox" id="velcro" checked><span>Велькро для крепления к полу и другим дорожкам</span></label>
         </div>
-        <button class="btn" id="trkAdd" style="align-self:flex-start">Добавить дорожку в заявку</button>
+        <button class="btn" id="trkAdd" style="align-self:flex-start"><span class="bt">Дорожку в заявку</span> <span class="arr"></span></button>
       </div>
-      <div>
-        <div class="viz">
-          <svg viewBox="0 0 760 290" id="trkSvg">
-            <path id="floor" fill="#E9E6DD"/>
-            <g id="ruler" font-family="PT Sans" font-size="12" fill="#5B6275"></g>
-            <path id="tSide" fill="#D7192D"/>
-            <path id="tEnd" fill="#B3101F"/>
-            <path id="tTop" fill="#8A93A6"/>
-            <g id="lanes"></g>
-            <text id="trkLogo" font-family="PT Serif" font-weight="700" fill="#fff" opacity="0">ШКОЛА</text>
-            <g id="man"><circle id="mHead" fill="#0B2A6F"/><path id="mBody" stroke="#0B2A6F" stroke-linecap="round" fill="none"/></g>
-            <text id="mLbl" font-family="PT Sans" font-size="12" fill="#5B6275">1,7 м</text>
-          </svg>
-          <dl class="sum">
-            <div><dt>Размер</dt><dd id="sSize">0,2 × 2 × 10 м</dd></div>
-            <div><dt>Нагрузка</dt><dd>до 120 кг</dd></div>
-            <div><dt>Материал</dt><dd>армированный ПВХ</dd></div>
-            <div><dt>Температура</dt><dd>0…+40 °C</dd></div>
-          </dl>
-          <p class="kitbox"><b>В комплекте:</b> дорожка с ручками, электрический компрессор 1200 Вт, сумка, ремкомплект, паспорт изделия, сертификат ГОСТ Р 56446-2015. Гарантия 12 месяцев.</p>
-        </div>
+      <div class="viz">
+        <svg viewBox="0 0 760 290" id="trkSvg">
+          <path id="floor" fill="#E3E8F2"/>
+          <g id="ruler" font-family="Exo 2" font-size="12" fill="#5A6482"></g>
+          <path id="tSide"/><path id="tEnd"/><path id="tTop" fill="#3F6FD8"/>
+          <g id="lanes"></g>
+          <text id="trkLogo" font-family="Exo 2" font-weight="900" font-style="italic" fill="#fff" opacity="0">ШКОЛА</text>
+          <g><circle id="mHead" fill="#0A2A78"/><path id="mBody" stroke="#0A2A78" stroke-linecap="round" fill="none"/></g>
+          <text id="mLbl" font-family="Exo 2" font-size="12" fill="#5A6482">1,7 м</text>
+        </svg>
+        <dl class="sum">
+          <div><dt>Размер</dt><dd id="sSize">0,2 × 2 × 10 м</dd></div>
+          <div><dt>Нагрузка</dt><dd>до 120 кг</dd></div>
+          <div><dt>Материал</dt><dd>армир. ПВХ</dd></div>
+          <div><dt>Режим</dt><dd>0…+40 °C</dd></div>
+        </dl>
+        <p class="kitbox"><b>В комплекте:</b> дорожка с ручками, компрессор 1200 Вт, сумка, ремкомплект, паспорт изделия, сертификат ГОСТ Р 56446-2015. Гарантия 12 месяцев.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="halls">
+<section id="case" class="pad">
   <div class="wrap">
-    <div class="sec-head">
-      <div><div class="kick"><b>§ 5</b>В залах</div><h2>Снаряды в работе</h2></div>
-      <p class="lead">Фото от клиентов и с монтажей. Подписи с городами и названиями школ добавим после согласования с клиентами.</p>
+    <div class="head">
+      <div><div class="tag">Кейс</div><h2>«Спартак»: зал к Кубку Сибири</h2></div>
+      <p class="lead">Федерация прыжков на батуте Новосибирской области. Четыре дорожки 10 × 2 × 0,2 м вдоль трёх батутов Eurotramp, чтобы страховать вылеты с сетки. Весь процесс Роман снял на видео.</p>
     </div>
-    <div class="halls">
-      <figure class="h1" data-r><img src="assets/img/g-kids.jpg" alt="Дети занимаются на надувной дорожке" loading="lazy"><figcaption>Разминка детской группы на дорожке UNITRAMP <span class="gap">школа, город</span></figcaption></figure>
-      <figure class="h2" data-r><img src="assets/img/g-team.jpg" alt="Команда с наградами на дорожке" loading="lazy"><figcaption>Команда с призовыми вымпелами на дорожке UNITRAMP</figcaption></figure>
-      <figure class="h3" data-r><img src="assets/img/g-school.jpg" alt="Батут в спортивном зале" loading="lazy"><figcaption>Батут 5×3 в зале спортивной школы</figcaption></figure>
-      <figure class="h4" data-r><img src="assets/img/g-jump.jpg" alt="Прыжок на батуте 5×5" loading="lazy"><figcaption>Фристайл-батут 5×5</figcaption></figure>
-      <figure class="h5" data-r><img src="assets/img/g-landing.jpg" alt="Приземление на мат" loading="lazy" style="object-position:50% 70%"><figcaption>Мат для приземления</figcaption></figure>
+    <div class="tl" id="tl">
+      <div class="tl-line"><i id="tlFill"></i></div>
+      <div class="st" data-r>
+        <div class="tx"><div class="d">20 апреля 2018</div><h3>Погрузка на производстве</h3><p>Упакованные дорожки грузят в «Газель» и везут в зал.</p></div>
+        <div class="im"><img src="assets/img/v-gazel.jpg" alt="Погрузка дорожек в машину" loading="lazy"></div>
+      </div>
+      <div class="st" data-r>
+        <div class="tx"><div class="d">Тот же день</div><h3>Пятый этаж пешком</h3><p>Лифта в здании нет. Дорожки поднимают на руках, для этого по бокам есть ручки.</p></div>
+        <div class="im"><img src="assets/img/v-load.jpg" alt="Разгрузка дорожек у зала" loading="lazy"></div>
+      </div>
+      <div class="st" data-r>
+        <div class="tx"><div class="d">В зале</div><h3>Дорожки вдоль батутов</h3><p>По две дорожки с каждой стороны ряда из трёх батутов, по всей длине. Дорожки соединяются между собой, щелей на стыке нет.</p></div>
+        <div class="mini"><svg viewBox="0 0 520 220">
+          <rect x="0" y="0" width="520" height="220" fill="rgba(255,255,255,.05)"/>
+          <g fill="#3F6FD8" stroke="#fff" stroke-width="1"><rect x="40" y="40" width="210" height="34"/><rect x="250" y="40" width="210" height="34"/><rect x="40" y="146" width="210" height="34"/><rect x="250" y="146" width="210" height="34"/></g>
+          <g fill="#08205E" stroke="#fff" stroke-width="2"><rect x="40" y="86" width="126" height="48"/><rect x="187" y="86" width="126" height="48"/><rect x="334" y="86" width="126" height="48"/></g>
+          <g font-family="Exo 2" font-size="12" fill="#fff" text-anchor="middle"><text x="145" y="61">дорожка 10 м</text><text x="355" y="61">дорожка 10 м</text><text x="103" y="114">Eurotramp</text><text x="250" y="114">Eurotramp</text><text x="397" y="114">Eurotramp</text><text x="145" y="167">дорожка 10 м</text><text x="355" y="167">дорожка 10 м</text></g>
+        </svg></div>
+      </div>
+      <div class="st" data-r>
+        <div class="tx"><div class="d">Замер секундомером</div><h3>Надув одной дорожки</h3><p>Дорожка 10 × 2 × 0,2 м от компрессора из комплекта.</p></div>
+        <div class="big" data-t2="5:03">0:00<small>минут и секунд</small></div>
+      </div>
+      <div class="st" data-r>
+        <div class="tx"><div class="d">Итог</div><h3>Зал готов</h3><p>Три батута Eurotramp и четыре дорожки встали за 20–25 минут силами четырёх человек. Тренировки продолжились в тот же день.</p></div>
+        <div class="big">20–25<small>минут на установку</small></div>
+      </div>
+      <div class="st" data-r>
+        <div class="tx"><div class="d">4–9 мая 2018</div><h3>Всероссийские соревнования «Кубок Сибири»</h3><p>Ради них и делали поставку: зал принимает старты на новом оборудовании. <span class="gap ok">фото с соревнований</span></p></div>
+        <div class="big">4–9<small>мая, Новосибирск</small></div>
+      </div>
+    </div>
+    <a class="btn" href="https://www.youtube.com/watch?v=ztQdCxJSLOk" target="_blank" rel="noopener">Видео установки <span class="arr"></span></a>
+  </div>
+</section>
+
+<section id="voices" class="pad">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="tag">Слово специалистов</div><h2>Кто работает на наших снарядах</h2></div>
+      <p class="lead">Видеоотзывы опубликованы на канале UNITRAMP. Регалии указаны так, как они подписаны в видео.</p>
+    </div>
+    <div class="fed" data-r>
+      <div class="fed-ph"><img src="assets/img/v-fed.jpg" alt="Елена Перескокова в зале с батутами и дорожками" loading="lazy"><a class="play" href="https://www.youtube.com/watch?v=yq5AmMBLSKw" target="_blank" rel="noopener" aria-label="Смотреть видеоотзыв"></a></div>
+      <div class="fed-tx">
+        <div class="tag">Федерация прыжков на батуте</div>
+        <h3>Елена Анатольевна Перескокова</h3>
+        <p class="org">Видеоотзыв снят в зале с батутами и дорожками UNITRAMP, Новосибирск. <span class="gap ok">цитата из отзыва и согласие</span></p>
+        <ul class="creds">
+          <li><b>МСМК</b><span>по спортивной гимнастике</span></li>
+          <li><b>МС</b><span>по спортивной акробатике</span></li>
+          <li><b>Судья</b><span>1-й международной категории</span></li>
+          <li><b>ЕВСК</b><span>участник формирования ЕВСК по прыжкам на АКД</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="voices2">
+      <div class="de" data-r>
+        <div class="de-ph"><img src="assets/img/v-de.jpg" alt="Тренер из Германии" loading="lazy"></div>
+        <div class="de-tx">
+          <div class="tag">Германия, Лёррах</div>
+          <blockquote>«Долго искал надёжного производителя, выбирал из европейских, американских и российских»</blockquote>
+          <cite>Егор, тренер по спортивной акробатике и гимнастике. Заказал акробатическую дорожку. <span class="gap ok">фамилия и согласие</span></cite>
+        </div>
+      </div>
+      <div class="bar2" data-r>
+        <div><div class="tag">Барнаул</div><h3>Батутный центр «Пружина»</h3><p>Руководитель центра рассказывает о работе с UNITRAMP.</p></div>
+        <a href="https://www.youtube.com/watch?v=tqs5zcnIDaY" target="_blank" rel="noopener">Смотреть отзыв <span class="arr"></span></a>
+      </div>
+    </div>
+    <div class="band" data-r>
+      <figure><img src="assets/img/g-kids.jpg" alt="Дети на разминке на дорожке UNITRAMP" loading="lazy"><figcaption>Детская группа на разминке <span class="gap">школа, город</span></figcaption></figure>
+      <figure><img src="assets/img/g-team.jpg" alt="Команда с вымпелами на дорожке" loading="lazy" style="object-position:50% 40%"><figcaption>Команда с призовыми вымпелами</figcaption></figure>
+      <figure><img src="assets/img/v-kidjump.jpg" alt="Прыжок на дорожке" loading="lazy"><figcaption>Прыжки на дорожке, кадр из видео UNITRAMP</figcaption></figure>
     </div>
   </div>
 </section>
 
-<section id="docs" style="background:var(--white);border-top:1px solid var(--line)">
+<section id="catalog" class="pad">
   <div class="wrap">
-    <div class="sec-head">
-      <div><div class="kick"><b>§ 6</b>Для закупки</div><h2>Документы, которые попросит бухгалтерия</h2></div>
+    <div class="head">
+      <div><div class="tag">Каталог</div><h2>Снаряды и комплектующие</h2></div>
+      <p class="lead">Характеристики из паспортов изделий на unitramp.ru. Отметьте нужное, и мы пришлём коммерческое предложение.</p>
+    </div>
+    <div class="ctabs" id="ctabs"></div>
+    <div class="cat">
+      <ol class="rows" id="rows"></ol>
+      <div class="prev">
+        <div class="ph"><img id="pvImg" src="assets/img/p-tramp.jpg" alt=""></div>
+        <h3 id="pvName"></h3>
+        <table class="spec" id="pvSpec"></table>
+        <button class="add" id="pvAdd">+ в заявку</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="docs" class="pad">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="tag">Для закупки</div><h2>Документы, которые попросит бухгалтерия</h2></div>
       <p class="lead">Работаем с юрлицами по счёту. Отгрузка со склада в Новосибирске любой транспортной компанией по согласованию.</p>
     </div>
     <div class="docs" data-r>
-      <div class="doc"><div class="n">01</div><h3>Сертификат соответствия</h3><p>ГОСТ Р на спортивные батуты. Для дорожек сертификат качества ГОСТ Р 56446-2015.</p></div>
-      <div class="doc"><div class="n">02</div><h3>Паспорт изделия</h3><p>Идёт в комплекте с каждой дорожкой и батутом: размеры, правила эксплуатации, гарантия.</p></div>
-      <div class="doc"><div class="n">03</div><h3>Спецификация для ТЗ</h3><p>Габариты, материалы и состав комплекта, которые можно перенести в техническое задание закупки.</p></div>
-      <div class="doc"><div class="n">04</div><h3>Договор и закрывающие</h3><p>Договор поставки, счёт, накладная. <span class="gap ok">работа по 44-ФЗ и 223-ФЗ</span></p></div>
+      <div class="doc"><div class="n">01</div><h3>Сертификат ГОСТ Р</h3><p>На спортивные батуты. Для дорожек сертификат качества ГОСТ Р 56446-2015.</p></div>
+      <div class="doc"><div class="n">02</div><h3>Паспорт изделия</h3><p>В комплекте с каждой дорожкой и батутом: размеры, эксплуатация, гарантия.</p></div>
+      <div class="doc"><div class="n">03</div><h3>Спецификация для ТЗ</h3><p>Габариты, материалы и состав комплекта для технического задания.</p></div>
+      <div class="doc"><div class="n">04</div><h3>Договор и закрывающие</h3><p>Договор поставки, счёт, накладная. <span class="gap ok">44-ФЗ и 223-ФЗ</span></p></div>
     </div>
-    <div class="paper">
-      <div class="sheet" data-r>
-        <div class="stamp">ПАСПОРТ<br>ИЗДЕЛИЯ</div>
-        <h4>Батут спортивный 5×3</h4>
-        <p class="sub">Выдержка из спецификации, шитая сетка</p>
-        <table>
-          <tr><td>Длина рамы</td><td>5 200 ± 50 мм</td></tr>
-          <tr><td>Ширина рамы</td><td>3 100 ± 50 мм</td></tr>
-          <tr><td>Высота от пола до сетки</td><td>1 150 ± 50 мм</td></tr>
-          <tr><td>Сетка</td><td>4 260 × 2 130 мм, тесьма 4×4</td></tr>
-          <tr><td>Пружины</td><td>118 шт., оцинкованная сталь</td></tr>
-          <tr><td>Вес каркаса / сетки / пружин</td><td>210 / 9 / 55 кг</td></tr>
-          <tr><td>Соединение каркаса</td><td>винтовое, разборное</td></tr>
-        </table>
+    <div class="gw">
+      <div data-r><div class="tag">Гарантия</div><h2 style="font-size:clamp(30px,3.4vw,48px)">Если что-то пошло не так</h2><p class="lead" style="margin-top:18px">Порядок, который Роман описывает в обзоре дорожки.</p></div>
+      <div class="gsteps" data-r>
+        <div class="gs"><i>01</i><b>Письмо</b><span>Описание в свободной форме, фото и видео проблемы на почту.</span></div>
+        <div class="gs"><i>02</i><b>Ответ</b><span>Быстро рассматриваем и даём официальный ответ. Под гарантию: целостность, швы, клапаны.</span></div>
+        <div class="gs"><i>03</i><b>Ремонт или замена</b><span>Ремонт за счёт UNITRAMP. Если ремонт невозможен, замена на новое изделие.</span></div>
       </div>
-      <div>
-        <ol class="steps">
-          <li><div><b>Заявка или ТЗ</b><span>Присылаете список или техническое задание, мы сверяем размеры и комплектацию.</span></div></li>
-          <li><div><b>Коммерческое предложение</b><span>Цены, сроки изготовления и доставки, документы для обоснования цены.</span></div></li>
-          <li><div><b>Договор и изготовление</b><span>Шьём и варим под ваш заказ. <span class="gap">срок изготовления по позициям</span></span></div></li>
-          <li><div><b>Доставка и сборка</b><span>Батут поставляется в разобранном виде. <span class="gap ok">шеф-монтаж и выезд специалиста</span></span></div></li>
-        </ol>
-      </div>
+    </div>
+    <div class="pdf" data-r>
+      <div><h3>PDF-каталог для комиссии</h3><p>Все позиции с размерами и комплектацией одним файлом. <span class="gap">файл каталога</span></p></div>
+      <a class="btn" href="#form">Получить каталог <span class="arr"></span></a>
     </div>
   </div>
 </section>
 
-<section id="people">
+<section id="faq" class="pad" style="padding-top:0">
   <div class="wrap">
-    <div class="sec-head">
-      <div><div class="kick"><b>§ 7</b>Люди</div><h2>Тренеры и федерации о снарядах</h2></div>
-      <p class="lead">Видеоотзывы опубликованы на unitramp.ru. Для этого сайта возьмём короткие цитаты с согласия авторов.</p>
-    </div>
-    <div class="pp">
-      <div class="quote" data-r>
-        <blockquote>«<span class="gap">цитата Романа о том, каким должен быть снаряд для спортивной школы</span>»</blockquote>
-        <cite><b>Роман Сотников</b>основатель UNITRAMP <span class="gap ok">спортивное звание</span></cite>
-      </div>
-      <div>
-        <div class="rev" data-r><span class="tag">Видеоотзыв · федерация</span><h3>Е. А. Перескокова, Федерация прыжков на батуте</h3><p>Отзыв об акробатической дорожке UNITRAMP, опубликован на сайте компании. <span class="gap ok">регион федерации и разрешение на цитату</span></p></div>
-        <div class="rev" data-r><span class="tag">Видеоотзыв · Германия</span><h3>Клуб из Лёррах</h3><p>Дорожка UNITRAMP в зале немецкого клуба: оборудование уходит и за рубеж. <span class="gap ok">название клуба</span></p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="faq">
-  <div class="wrap">
-    <div class="sec-head">
-      <div><div class="kick"><b>§ 8</b>Вопросы</div><h2>Что спрашивают тренеры и закупщики</h2></div>
-    </div>
+    <div class="head"><div><div class="tag">Вопросы</div><h2>Что спрашивают тренеры</h2></div></div>
     <div class="faq">
-      <details><summary>Подойдёт ли батут для соревнований?</summary><div class="a"><p>Рама батута 5×3 повторяет олимпийский каркас, сетка 426×213 см. Для официальных стартов уточните требования вашей федерации, мы сверим спецификацию. <span class="gap ok">есть ли сертификация FIG</span></p></div></details>
-      <details><summary>Можно ли поставить сетку UNITRAMP на чужой батут?</summary><div class="a"><p>Да, есть сетки под размер 426×213, в том числе под рамы Eurotramp. Гарантия на сетку на чужой раме 6 месяцев, на нашей 12.</p></div></details>
-      <details><summary>Как ухаживать за сеткой?</summary><div class="a"><p>Новая сетка на 7–10% меньше заявленного размера и выходит на рабочий размер за несколько недель. Шитую сетку можно стирать в машине в холодной воде.</p></div></details>
-      <details><summary>Дорожку нужно постоянно подкачивать?</summary><div class="a"><p>Нет, давление держится жёстко. Компрессор 1200 Вт идёт в комплекте, им же дорожку сдувают для хранения. Заниматься можно в носках или батутных чешках, без обуви.</p></div></details>
-      <details><summary>Можно ли нанести логотип и выбрать цвет?</summary><div class="a"><p>Да. Цвет боковины выбирается из палитры ПВХ, логотип наносится на поверхность, цена зависит от его размера. Маты обкладки батута тоже шьём любого цвета.</p></div></details>
-      <details><summary>Какие сроки и цены?</summary><div class="a"><p>Зависят от состава заявки. Пришлите список или ТЗ, и мы вернёмся с коммерческим предложением. <span class="gap">прайс или диапазоны цен по основным позициям</span></p></div></details>
+      <details><summary>Можно утопить дорожку в пол вровень с помостом?</summary><div class="a"><p>Не рекомендуем. При работе дорожка расширяется по периметру и будет упираться в борт, толчок изменится.</p></div></details>
+      <details><summary>Подойдёт ли батут для соревнований?</summary><div class="a"><p>Рама батута 5×3 повторяет олимпийский каркас, сетка 426×213 см, тесьма 4×4 мм. Для официальных стартов уточните требования федерации, мы сверим спецификацию. <span class="gap ok">сертификация FIG</span></p></div></details>
+      <details><summary>Поставите сетку на батут другого производителя?</summary><div class="a"><p>Да, есть сетки 426×213, в том числе под рамы Eurotramp. Гарантия на сетку на чужой раме 6 месяцев, на нашей 12.</p></div></details>
+      <details><summary>Дорожку нужно подкачивать?</summary><div class="a"><p>Нет, давление держится. Подкачивают, только чтобы сделать дорожку жёстче для старших спортсменов. Заниматься можно в носках или батутных чешках, без обуви.</p></div></details>
+      <details><summary>Что не входит в гарантию?</summary><div class="a"><p>Проколы острыми предметами и ошибки эксплуатации. В остальных случаях ремонтируем за свой счёт или меняем изделие.</p></div></details>
+      <details><summary>Сколько стоит и как быстро сделаете?</summary><div class="a"><p>Зависит от состава заявки. Пришлите список или ТЗ, и мы вернёмся с коммерческим предложением. <span class="gap">диапазоны цен и сроки изготовления</span></p></div></details>
     </div>
   </div>
 </section>
 
-<section id="form">
+<section id="form" class="pad">
   <div class="wrap fm">
     <div>
-      <div class="kick"><b>§ 9</b>Заявка</div>
-      <h2>Получить КП и PDF-каталог</h2>
-      <p class="lead" style="margin-top:20px">Ответим в течение рабочего дня <span class="gap ok">срок ответа</span>. Если есть техническое задание, приложите его ссылкой в комментарии.</p>
-      <div class="picked"><h4>В заявке</h4><ul id="picked"><li class="empty">Пока пусто. Отметьте позиции в каталоге или соберите дорожку.</li></ul></div>
+      <div class="tag">Заявка</div>
+      <h2>КП и PDF-каталог</h2>
+      <p class="lead" style="margin-top:20px">Ответим в рабочий день <span class="gap ok">срок ответа</span>. Если есть ТЗ, вставьте ссылку в комментарий.</p>
+      <div class="picked"><h4>В заявке</h4><ul id="picked"></ul></div>
     </div>
     <div>
       <form id="f" novalidate>
-        <div class="row">
-          <div class="f"><label for="fn">Имя</label><input id="fn" required></div>
-          <div class="f"><label for="fo">Организация</label><input id="fo" placeholder="СШОР, федерация, клуб"></div>
-        </div>
-        <div class="row">
-          <div class="f"><label for="fp">Телефон</label><input id="fp" type="tel" placeholder="+7 (___) ___-__-__" required></div>
-          <div class="f"><label for="fe">Почта</label><input id="fe" type="email"></div>
-        </div>
+        <div class="row"><div class="f"><label for="fn">Имя</label><input id="fn"></div><div class="f"><label for="fo">Организация</label><input id="fo" placeholder="СШОР, федерация, клуб"></div></div>
+        <div class="row"><div class="f"><label for="fp">Телефон</label><input id="fp" type="tel" placeholder="+7 (___) ___-__-__"></div><div class="f"><label for="fe">Почта</label><input id="fe" type="email"></div></div>
         <div class="f full"><label for="fs">Как закупаете</label><select id="fs"><option>Прямой договор</option><option>Тендер 44-ФЗ</option><option>Тендер 223-ФЗ</option><option>Частный клуб</option></select></div>
-        <div class="f full"><label for="fc">Комментарий</label><textarea id="fc" placeholder="Город, сроки, ссылка на ТЗ"></textarea></div>
+        <div class="f full"><label for="fc">Комментарий</label><textarea id="fc" placeholder="Город, размеры зала, сроки, ссылка на ТЗ"></textarea></div>
         <p class="agree">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
-        <button class="btn" type="submit">Отправить заявку</button>
+        <button class="btn" type="submit">Отправить заявку <span class="arr"></span></button>
       </form>
       <div class="sent"><h3>Заявка принята</h3><p>Это прототип: данные никуда не отправлены. На рабочем сайте здесь будет отправка менеджеру и PDF-каталог на почту.</p></div>
     </div>
   </div>
 </section>
-
 <footer><div class="wrap"><span>© UNITRAMP, с 2014 года · ООО «ЮНИТРАМП», ИНН 5404505599</span><span>Склад: Новосибирск, ул. Сухарная, 35 к11</span></div></footer>
 <button id="gapsToggle">Скрыть пробелы в данных</button>
-<a class="btn" id="cartFab" href="#form">В заявке: <span class="cart-n" id="cartN2">0</span></a>
 
 <script>
 var $=function(s,c){return(c||document).querySelector(s)},$$=function(s,c){return[].slice.call((c||document).querySelectorAll(s))};
 var IMG='assets/img/';
-var CAT={
- 'Батуты':[
-  {id:'t1',n:'Батут спортивный 5×3, шитая сетка',i:'p-tramp.jpg',s:[['Рама','5 200 × 3 100 мм'],['До сетки','1 150 мм'],['Сетка','426×213, тесьма 4×4'],['Пружины','118 шт.']]},
-  {id:'t2',n:'Батут 5×3 со страховочными столами',i:'p-tramp-t.jpg',s:[['Столы','2 шт., 175×260×115 см'],['Маты столов','толщина 20 см'],['Рама','аналог олимпийского каркаса'],['Сертификат','ГОСТ Р']]},
-  {id:'t3',n:'Фристайл-батут 5×5',i:'p-free.jpg',s:[['Рама','5 100 × 5 100 мм'],['До пола','1 250 мм'],['Пружины','152 шт., 256 мм'],['Вес в сборе','360 кг']]},
-  {id:'t4',n:'Страховочный стол к батуту 5×3',i:'p-table.jpg',s:[['Рама','175×260×115 см'],['Мат','240×300 см, 20 см'],['Материал','поролон и ПВХ'],['Цвет','любой']]}
- ],
- 'Дорожки':[
-  {id:'a1',n:'Дорожка акробатическая 0,2 м',i:'p-track.jpg',s:[['Ширина','2 м'],['Длина','8, 10, 15, 20 м или своя'],['Нагрузка','до 120 кг'],['Компрессор','1200 Вт в комплекте']]},
-  {id:'a2',n:'Дорожка акробатическая 0,3 м',i:'g-track-hall.jpg',c:1,s:[['Ширина','2 м'],['Длина','8, 10, 15, 20 м или своя'],['Шов','термический'],['Стандарт','ГОСТ Р 56446-2015']]},
-  {id:'a3',n:'Ковёр надувной произвольного размера',i:'g-colors.jpg',c:1,s:[['Размер','под зал'],['Цвет','из палитры ПВХ'],['Крепление','велькро'],['Логотип','по запросу']]},
-  {id:'a4',n:'Air Box',i:'p-airbox.jpg',s:[['Тип','надувной блок'],['Материал','армированный ПВХ'],['Накачка','компрессор или насос'],['Размеры','в PDF-каталоге']]},
-  {id:'a5',n:'Air Roll',i:'p-roll.jpg',s:[['Тип','надувной цилиндр'],['Материал','армированный ПВХ'],['Накачка','компрессор или насос'],['Размеры','в PDF-каталоге']]},
-  {id:'a6',n:'AirTrack Home Use',i:'p-home.jpg',s:[['Для кого','домашние тренировки'],['Материал','армированный ПВХ'],['Хранение','сдувается в сумку'],['Насос','в комплекте']]}
- ],
- 'Маты и покрытия':[
-  {id:'m1',n:'Мат гимнастический 1×2×0,1 м',i:'p-mat.jpg',s:[['Размер','1 × 2 м'],['Толщина','10 см'],['Чехол','ПВХ или ткань'],['Цвет','любой']]},
-  {id:'m2',n:'Будо-маты',i:'p-budo.jpg',s:[['Толщина','2; 2,5; 4 см'],['Тип','сборное покрытие'],['Для','пола зала'],['Цвет','синий, красный']]},
-  {id:'m3',n:'Ролл-мат',i:'p-rollmat.jpg',s:[['Тип','сворачиваемый мат'],['Для','акробатики и ОФП'],['Хранение','в рулоне'],['Размеры','в PDF-каталоге']]},
-  {id:'m4',n:'Мат для приземления 2×3×0,3 м',i:'p-land.jpg',s:[['Размер','2 × 3 м'],['Толщина','30 см'],['Для','соскоков и прыжков'],['Чехол','ПВХ']]},
-  {id:'m5',n:'Зона приземления ДМТ',i:'p-dmt.jpg',s:[['Для','двойного мини-трампа и АКД'],['Разметка','зона приземления'],['Чехол','ПВХ'],['Размеры','в PDF-каталоге']]},
-  {id:'m6',n:'Стеновой протектор',i:'p-wall.jpg',s:[['Для','стен и колонн зала'],['Чехол','ПВХ'],['Крепление','к стене'],['Размеры','под зал']]}
- ],
- 'Сетки':[
-  {id:'n1',n:'Сетка 426×213, шитая тесьма 4×4',i:'p-net44.jpg',s:[['Подходит','батут 5×3, рамы Eurotramp'],['Плетение','с прошивкой каждой ячейки'],['Переходники','110 шт., нержавейка'],['Гарантия','12 мес. на раме UNITRAMP']]},
-  {id:'n2',n:'Сетка 426×213 плетёная 6×6',i:'p-netw.jpg',s:[['Подходит','батут 5×3'],['Тесьма','6×6 мм'],['Переходники','нержавеющая сталь'],['Уход','стирка в холодной воде']]},
-  {id:'n3',n:'Сетка для фристайл-батута 5×5',i:'g-jump.jpg',c:1,s:[['Размер','416×416 см'],['Тесьма','4×4 мм'],['Подходит','батут 5×5'],['Применение','зал и улица']]}
- ]
+var P={
+ t1:{n:'Батут спортивный 5×3',c:'Батуты',i:'p-tramp.jpg',k:'рама 5 200 × 3 100 мм',s:[['Рама','5 200 × 3 100 мм'],['До сетки','1 150 мм'],['Сетка','426×213, тесьма 4×4'],['Пружины','118 шт.'],['Гарантия рамы','36 мес.']]},
+ t2:{n:'Батут 5×3 со страховочными столами',c:'Батуты',i:'p-tramp-t.jpg',k:'2 стола 175×260×115 см',s:[['Столы','2 шт., 175×260×115 см'],['Маты столов','240×300, толщина 20 см'],['Рама','аналог олимпийского каркаса'],['Сертификат','ГОСТ Р']]},
+ t3:{n:'Фристайл-батут 5×5',c:'Батуты',i:'p-free.jpg',k:'зал и улица',s:[['Рама','5 100 × 5 100 мм'],['Высота','1 250 мм'],['Пружины','152 шт., 256 мм'],['Вес в сборе','360 кг']]},
+ t4:{n:'Страховочный стол к батуту 5×3',c:'Батуты',i:'p-table.jpg',k:'175×260×115 см',s:[['Рама','175×260×115 см'],['Мат','240×300 см, 20 см'],['Цвет','любой']]},
+ a1:{n:'Дорожка акробатическая 0,2 м',c:'Дорожки',i:'p-track.jpg',k:'2 м × 5–50 м',s:[['Ширина','2 м'],['Длина','8, 10, 15, 20 м или своя'],['Нагрузка','до 120 кг'],['Комплект 10 м','87 кг']]},
+ a2:{n:'Дорожка акробатическая 0,3 м',c:'Дорожки',i:'p-track.jpg',k:'для сложных элементов',s:[['Ширина','2 м'],['Длина','8, 10, 15, 20 м или своя'],['Шов','термический'],['Стандарт','ГОСТ Р 56446-2015']]},
+ a3:{n:'Надувной ковёр',c:'Дорожки',i:'g-colors.jpg',k:'размер под зал',s:[['Размер','под зал'],['Цвет','из палитры ПВХ'],['Крепление','велькро']]},
+ a4:{n:'Air Box',c:'Дорожки',i:'p-airbox.jpg',k:'надувной блок',s:[['Материал','армированный ПВХ'],['Накачка','компрессор или насос']]},
+ a5:{n:'Air Roll',c:'Дорожки',i:'p-roll.jpg',k:'надувной цилиндр',s:[['Материал','армированный ПВХ'],['Накачка','компрессор или насос']]},
+ m1:{n:'Мат гимнастический 1×2×0,1 м',c:'Маты',i:'p-mat.jpg',k:'чехол ПВХ или ткань',s:[['Размер','1 × 2 м'],['Толщина','10 см'],['Чехол','ПВХ или ткань']]},
+ m2:{n:'Будо-маты',c:'Маты',i:'p-budo.jpg',k:'2; 2,5; 4 см',s:[['Толщина','2; 2,5; 4 см'],['Для','покрытия пола']]},
+ m3:{n:'Ролл-мат',c:'Маты',i:'p-rollmat.jpg',k:'сворачивается в рулон',s:[['Для','акробатики и ОФП'],['Хранение','в рулоне']]},
+ m4:{n:'Мат для приземления 2×3×0,3 м',c:'Маты',i:'p-land.jpg',k:'толщина 30 см',s:[['Размер','2 × 3 м'],['Толщина','30 см'],['Чехол','ПВХ']]},
+ m5:{n:'Зона приземления ДМТ',c:'Маты',i:'p-dmt.jpg',k:'для ДМТ и АКД',s:[['Для','двойного мини-трампа и АКД']]},
+ m6:{n:'Стеновой протектор',c:'Маты',i:'p-wall.jpg',k:'стены и колонны',s:[['Для','стен и колонн'],['Чехол','ПВХ']]},
+ n1:{n:'Сетка 426×213, шитая 4×4',c:'Сетки',i:'p-net44.jpg',k:'и под рамы Eurotramp',s:[['Подходит','батут 5×3, Eurotramp'],['Плетение','с прошивкой каждой ячейки'],['Переходники','110 шт., нержавейка']]},
+ n2:{n:'Сетка 426×213 плетёная 6×6',c:'Сетки',i:'p-netw.jpg',k:'тесьма 6×6 мм',s:[['Подходит','батут 5×3'],['Уход','стирка в холодной воде']]}
 };
-var BY={};Object.keys(CAT).forEach(function(k){CAT[k].forEach(function(p){BY[p.id]=p})});
 var cart={};
 function renderCart(){
-  var ul=$('#picked'),k=Object.keys(cart);
-  $('#cartN').textContent=k.length;$('#cartN2').textContent=k.length;
-  $('#cartFab').classList.toggle('show',k.length>0&&window.innerWidth<820);
-  ul.innerHTML=k.length?k.map(function(id){return'<li><span>'+cart[id]+'</span><button data-del="'+id+'" aria-label="Убрать">×</button></li>'}).join(''):'<li class="empty">Пока пусто. Отметьте позиции в каталоге или соберите дорожку.</li>';
-  $$('.add').forEach(function(b){var on=!!cart[b.dataset.id];b.classList.toggle('on',on);b.querySelector('.tx').textContent=on?'В заявке':'Добавить в заявку'});
+  var k=Object.keys(cart);$('#cartN').textContent=k.length;
+  $('#picked').innerHTML=k.length?k.map(function(id){return'<li><span>'+cart[id]+'</span><button data-del="'+id+'" aria-label="Убрать">×</button></li>'}).join(''):'<li class="empty">Пока пусто. Добавьте снаряды из плана зала, каталога или конструктора дорожки.</li>';
+  $$('[data-id]').forEach(function(b){var on=!!cart[b.dataset.id];b.classList.toggle('on',on);if(b.classList.contains('add'))b.textContent=on?'✓ в заявке':'+ в заявку'});
 }
+function tog(id){if(cart[id])delete cart[id];else cart[id]=P[id].n;renderCart()}
 $('#picked').addEventListener('click',function(e){var d=e.target.dataset.del;if(d){delete cart[d];renderCart()}});
-var tabs=$('#tabs'),cat=$('#cat');
-Object.keys(CAT).forEach(function(k,i){var b=document.createElement('button');b.className='tab'+(i?'':' on');b.innerHTML=k+'<sup>'+CAT[k].length+'</sup>';b.onclick=function(){$$('.tab').forEach(function(t){t.classList.remove('on')});b.classList.add('on');showCat(k)};tabs.appendChild(b)});
-function showCat(k){
-  cat.innerHTML=CAT[k].map(function(p,i){return'<article class="card" style="animation-delay:'+(i*.06)+'s"><div class="ph'+(p.c?' cover':'')+'"><img src="'+IMG+p.i+'" alt="'+p.n+'" loading="lazy"></div><div class="bd"><h3>'+p.n+'</h3><table class="spec">'+p.s.map(function(r){return'<tr><td>'+r[0]+'</td><td>'+r[1]+'</td></tr>'}).join('')+'</table><button class="add" data-id="'+p.id+'"><span class="tx">Добавить в заявку</span><span class="pl">+</span></button></div></article>'}).join('');
-  renderCart();
+function specRows(s){return s.map(function(r){return'<tr><td>'+r[0]+'</td><td>'+r[1]+'</td></tr>'}).join('')}
+
+/* hall plan: meters, 30 px per m */
+var S=30;
+var TY={TT:{w:8.7,h:3.1,p:'t2',l:'5×3 + столы'},F:{w:5.1,h:5.1,p:'t3',l:'батут 5×5'},K:{h:2,p:'a1',c:'#3F6FD8',l:'дорожка 0,2'},K3:{h:2,p:'a2',c:'#2457C5',l:'дорожка 0,3'},L:{w:2,h:3,p:'m4',c:'#E0182D',l:'мат'},D:{w:6,h:2,p:'m5',c:'#B80F21',l:'зона ДМТ'},B:{w:2,h:1.2,p:'a4',c:'#1F4FD1',l:'box'},R:{w:1.6,h:1,p:'a5',c:'#5C7FD6',l:''},M:{w:1,h:2,p:'m1',c:'#5C7FD6',l:''},RM:{w:1.4,h:5,p:'m3',c:'#8FA8E6',l:'ролл'},BU:{p:'m2',c:'#D3DEF5',l:'будо-маты',dark:1},C:{p:'a3',c:'#B4C6F0',l:'надувной ковёр',dark:1},W:{p:'m6',c:'#E0182D',l:''}};
+function walls(){return[{t:'W',x:0,y:0,w:36,h:.35},{t:'W',x:0,y:17.65,w:36,h:.35}]}
+var LAY=[
+ {n:'Прыжки на батуте',d:'Ряд батутов со столами и дорожки по обе стороны для страховки, как в «Спартаке».',it:[{t:'TT',x:2,y:7.45},{t:'TT',x:13.65,y:7.45},{t:'TT',x:25.3,y:7.45},{t:'K',x:3,y:4.6,w:10},{t:'K',x:13.2,y:4.6,w:10},{t:'K',x:23.4,y:4.6,w:10},{t:'K',x:3,y:11.4,w:10},{t:'K',x:13.2,y:11.4,w:10},{t:'K',x:23.4,y:11.4,w:10},{t:'L',x:1,y:14},{t:'L',x:33,y:14}].concat(walls())},
+ {n:'Спортивная акробатика',d:'Разбег 30 м из трёх дорожек 0,3 м, мат в конце, ковёр для партера, Air Box и Air Roll.',it:[{t:'K3',x:1.5,y:2.5,w:10},{t:'K3',x:11.5,y:2.5,w:10},{t:'K3',x:21.5,y:2.5,w:10},{t:'L',x:31.8,y:2},{t:'C',x:1.5,y:7,w:14,h:9.5},{t:'B',x:18,y:8},{t:'B',x:18,y:10},{t:'R',x:21,y:8.1},{t:'R',x:21,y:10.1},{t:'BU',x:24,y:7,w:10.5,h:9.5}].concat(walls())},
+ {n:'Гимнастика и ОФП',d:'Две дорожки 15 м, гимнастические маты, ролл-маты и Air Roll для кувырков и мостиков.',it:[{t:'K',x:2,y:2.5,w:15},{t:'K',x:2,y:5.3,w:15},{t:'L',x:17.4,y:2.6},{t:'BU',x:2,y:9,w:16,h:7.5},{t:'M',x:21,y:2.5},{t:'M',x:22.2,y:2.5},{t:'M',x:23.4,y:2.5},{t:'M',x:24.6,y:2.5},{t:'M',x:25.8,y:2.5},{t:'M',x:27,y:2.5},{t:'RM',x:21,y:7},{t:'RM',x:23,y:7},{t:'R',x:26,y:7.5},{t:'R',x:26,y:9.5},{t:'B',x:29,y:7.5},{t:'L',x:31,y:12}].concat(walls())},
+ {n:'Фристайл',d:'Два батута 5×5 с широкой сеткой для вращений, зона приземления ДМТ, дорожка для разминки.',it:[{t:'F',x:4,y:6.4},{t:'F',x:13,y:6.4},{t:'L',x:1.5,y:7.4},{t:'L',x:19.5,y:7.4},{t:'D',x:25,y:8},{t:'L',x:31.5,y:7.5},{t:'K',x:23,y:3,w:10}].concat(walls())},
+ {n:'Цирк',d:'Батут со столами, дорожка 0,3 м для партерной акробатики, Air Box и надувной ковёр.',it:[{t:'TT',x:4,y:7.45},{t:'K3',x:16,y:3,w:15},{t:'L',x:31.4,y:2.5},{t:'B',x:17,y:8},{t:'R',x:20,y:8.1},{t:'M',x:17,y:11},{t:'M',x:18.2,y:11},{t:'M',x:19.4,y:11},{t:'L',x:24,y:10},{t:'C',x:27,y:9,w:7.5,h:7.5}].concat(walls())}
+];
+var curL=0;
+function R(x,y,w,h,f,extra){return'<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" fill="'+f+'"'+(extra||'')+'/>'}
+function bed(x,y,w,h){return R(x,y,w,h,'#2457C5')+R(x+12,y+10,w-24,h-20,'#08205E')+R(x+12,y+10,w-24,h-20,'url(#netp)')}
+function itemSvg(o,i){
+  var ty=TY[o.t],w=(o.w||ty.w)*S,h=(o.h||ty.h)*S,x=o.x*S,y=o.y*S,g='',lab=ty.l;
+  if(o.t=='TT'){var tw=1.75*S,th=2.6*S;g+=R(x,y+(h-th)/2,tw,th,'#1F4FD1')+R(x+w-tw,y+(h-th)/2,tw,th,'#1F4FD1')+bed(x+tw,y,5.2*S,h)+'<text x="'+(x+w/2)+'" y="'+(y+h/2)+'">'+lab+'</text>'}
+  else if(o.t=='F'){g+=bed(x,y,w,h)+'<text x="'+(x+w/2)+'" y="'+(y+h/2)+'">'+lab+'</text>'}
+  else if(o.t=='K'||o.t=='K3'){g+=R(x,y,w,h,ty.c)+'<path d="M'+x+' '+(y+h/3)+'H'+(x+w)+'M'+x+' '+(y+2*h/3)+'H'+(x+w)+'" stroke="#fff" stroke-width="1.5" opacity=".6"/><text x="'+(x+w/2)+'" y="'+(y+h/2)+'">'+lab+' · '+o.w+' м</text>'}
+  else{g+=R(x,y,w,h,ty.c)+(lab&&w>40?'<text x="'+(x+w/2)+'" y="'+(y+h/2)+'"'+(ty.dark?' style="fill:#0A2A78"':'')+'>'+lab+'</text>':'')}
+  g+='<rect class="hl" x="'+(x-2)+'" y="'+(y-2)+'" width="'+(w+4)+'" height="'+(h+4)+'" fill="none"/>';
+  return'<g class="it" data-i="'+i+'" style="animation-delay:'+(i*.05)+'s">'+g+'</g>';
 }
-cat.addEventListener('click',function(e){var b=e.target.closest('.add');if(!b)return;var id=b.dataset.id;if(cart[id])delete cart[id];else cart[id]=BY[id].n;renderCart()});
-showCat('Батуты');
+function showSide(i){
+  var o=LAY[curL].it[i],id=TY[o.t].p,p=P[id];
+  $$('.it').forEach(function(g){g.classList.toggle('sel',+g.dataset.i==i)});
+  $('#sTag').textContent=p.c;$('#sName').textContent=p.n+((o.t=='K'||o.t=='K3')?', '+o.w+' м':'');
+  $('#sImg').src=IMG+p.i;$('#sImg').alt=p.n;$('#sSpec').innerHTML=specRows(p.s);
+  $('#sAdd').dataset.id=id;renderCart();
+}
+function showL(n){
+  curL=n;var L=LAY[n];
+  $$('#dchips .dchip').forEach(function(c){c.classList.toggle('on',+c.dataset.i==n)});
+  $('#items').innerHTML=L.it.map(itemSvg).join('');
+  $('#dDesc').textContent=L.d;
+  var cnt={};L.it.forEach(function(o){var id=TY[o.t].p;cnt[id]=(cnt[id]||0)+1});
+  $('#sList').innerHTML=Object.keys(cnt).map(function(id){return'<li data-p="'+id+'"><span>'+P[id].n+'</span><b>× '+cnt[id]+'</b></li>'}).join('');
+  showSide(0);
+}
+$('#dchips').innerHTML=LAY.map(function(l,i){return'<button class="dchip" data-i="'+i+'">'+l.n+'</button>'}).join('');
+$('#dchips').addEventListener('click',function(e){var c=e.target.closest('.dchip');if(c)showL(+c.dataset.i)});
+$('#items').addEventListener('click',function(e){var g=e.target.closest('.it');if(g)showSide(+g.dataset.i)});
+$('#sList').addEventListener('click',function(e){var li=e.target.closest('li');if(!li)return;var id=li.dataset.p;showSide(LAY[curL].it.findIndex(function(o){return TY[o.t].p==id}))});
+$('#sAdd').addEventListener('click',function(){tog(this.dataset.id)});
+$('#hallAdd').addEventListener('click',function(){var cnt={};LAY[curL].it.forEach(function(o){var id=TY[o.t].p;cnt[id]=(cnt[id]||0)+1});Object.keys(cnt).forEach(function(id){cart[id]=P[id].n+' × '+cnt[id]});renderCart();var b=this;b.textContent='✓ зал в заявке';setTimeout(function(){b.textContent='Весь зал в заявку'},1600)});
+showL(0);
 
 /* scheme */
 var SP=[
- {t:'Рама',d:'Разборная, винтовое соединение, аналог олимпийского каркаса. Сварной профиль, полимерная покраска. Вес 210 кг, поставляется в разобранном виде.'},
- {t:'Сетка 426×213',d:'Шитая сетка: тесьма 4×4 мм, плетение с прошивкой каждой ячейки, 110 переходников из нержавеющей стали. Новая сетка на 7–10% меньше и выходит на размер за несколько недель.'},
- {t:'118 пружин',d:'Оцинкованная патентированная сталь, конусовидное сужение к зацепу. Работать можно только с полным комплектом: без нескольких пружин толчок становится непредсказуемым.'},
- {t:'Страховочные маты',d:'ППЭ разной плотности в европейском ПВХ высокой плотности. Крепление на велькро или люверсах. По матам можно ходить, не рискуя попасть на пружины. Цвет любой.'},
- {t:'Страховочные столы',d:'Две рамы 175×260×115 см по торцам батута, маты 240×300 см толщиной 20 см. Страхуют выход за пределы сетки на высоких прыжках.'}
+ {t:'Рама',d:'Разборная, винтовое соединение, аналог олимпийского каркаса. Вес 210 кг, поставляется в разобранном виде.'},
+ {t:'Сетка 426×213',d:'Тесьма 4×4 мм, плетение с прошивкой каждой ячейки, 110 переходников из нержавеющей стали. Новая сетка на 7–10% меньше и выходит на размер за несколько недель.'},
+ {t:'118 пружин',d:'Оцинкованная патентированная сталь с конусовидным сужением к зацепу. Работать только с полным комплектом: без нескольких пружин толчок становится непредсказуемым.'},
+ {t:'Страховочные маты',d:'ППЭ разной плотности в европейском ПВХ высокой плотности, крепление на велькро или люверсах. По матам можно ходить, не попадая на пружины. Цвет любой.'},
+ {t:'Страховочные столы',d:'Две рамы 175×260×115 см по торцам, маты 240×300 см толщиной 20 см. Страхуют выход за сетку на высоких прыжках.'}
 ];
 var sv=$('#schSvg'),sl=$('#schL');
 sl.innerHTML=SP.map(function(p,i){return'<li data-p="'+(i+1)+'"><b>'+(i+1)+'</b>'+p.t+'</li>'}).join('');
-(function(){var g=$('#springs'),h='';for(var x=112;x<=528;x+=13){h+='<path d="M'+x+' 124V134M'+x+' 386V396"/>'}for(var y=140;y<=380;y+=13){h+='<path d="M96 '+y+'H107M533 '+y+'H544"/>'}g.innerHTML=h})();
-function selP(n){
-  var p=SP[n-1];$('#schT').textContent=p.t;$('#schD').textContent=p.d;
-  sv.classList.add('focus');
-  $$('.part',sv).forEach(function(g){g.classList.toggle('lit',g.dataset.p==n)});
-  $$('.hs',sv).forEach(function(g){g.classList.toggle('on',g.dataset.p==n)});
-  $$('li',sl).forEach(function(l){l.classList.toggle('on',l.dataset.p==n)});
-  if(n==5&&!$('#withT').checked){$('#withT').checked=true;sv.classList.add('with-t')}
-}
+(function(){var h='';for(var x=112;x<=528;x+=13)h+='<path d="M'+x+' 124V134M'+x+' 386V396"/>';for(var y=140;y<=380;y+=13)h+='<path d="M96 '+y+'H107M533 '+y+'H544"/>';$('#springs').innerHTML=h})();
+function selP(n){var p=SP[n-1];$('#schT').textContent=p.t;$('#schD').textContent=p.d;sv.classList.add('focus');
+  $$('.part',sv).forEach(function(g){g.classList.toggle('lit',g.dataset.p==n)});$$('.hs',sv).forEach(function(g){g.classList.toggle('on',g.dataset.p==n)});$$('li',sl).forEach(function(l){l.classList.toggle('on',l.dataset.p==n)});
+  if(n==5&&!$('#withT').checked){$('#withT').checked=true;sv.classList.add('with-t')}}
 $$('.hs',sv).forEach(function(g){g.addEventListener('click',function(){selP(+g.dataset.p)})});
 $$('li',sl).forEach(function(l){l.addEventListener('click',function(){selP(+l.dataset.p)})});
 $('#withT').addEventListener('change',function(){sv.classList.toggle('with-t',this.checked)});
 $('#schT').textContent=SP[0].t;$('#schD').textContent=SP[0].d;$('li',sl).classList.add('on');
 
-/* disciplines */
-var DS=[
- {n:'Прыжки на батуте',img:'g-arena2.jpg',cap:'Батут 5×3 на соревновательной арене',d:'Индивидуальные прыжки и синхрон. Основа зала: батут 5×3 со столами и мягкая зона вокруг.',k:['t2','n1','m4','m6']},
- {n:'Спортивная акробатика',img:'g-team.jpg',cap:'Команда на дорожке UNITRAMP',d:'Акробатические дорожки для разбега и связок, мягкие снаряды для отработки элементов.',k:['a2','a4','a5','m2']},
- {n:'Гимнастика и ОФП',img:'g-kids.jpg',cap:'Детская группа на разминке',d:'Начальная подготовка и общая физическая: дорожка, маты, ролл для мостиков и кувырков.',k:['a1','m1','m3','a5']},
- {n:'Черлидинг',img:'g-colors.jpg',cap:'Палитра ПВХ для ковра и дорожек',d:'Надувной ковёр под площадку выступления в цветах команды и покрытие для разминки.',k:['a3','m2','a4']},
- {n:'Фристайл и сноуборд',img:'g-jump.jpg',cap:'Фристайл-батут 5×5',d:'Отработка вращений на батуте 5×5 с широкой сеткой. Работает в зале и на улице при плюсовой температуре.',k:['t3','n3','m5']},
- {n:'Цирк',img:'g-school.jpg',cap:'Батут в зале',d:'Батут со страховкой, дорожка для партерной акробатики и маты для приземления.',k:['t1','a2','m4','m6']}
-];
-var di=0,dt=$('#discTabs');
-dt.innerHTML=DS.map(function(d,i){return'<button class="chip'+(i?'':' on')+'" data-i="'+i+'">'+d.n+'</button>'}).join('');
-function showD(i){
-  di=i;var d=DS[i];
-  $$('.chip',dt).forEach(function(c){c.classList.toggle('on',c.dataset.i==i)});
-  var im=$('#discImg');im.style.opacity=0;setTimeout(function(){im.src=IMG+d.img;im.alt=d.cap;im.style.opacity=1},250);
-  $('#discCap').textContent=d.cap;$('#discT').textContent=d.n;$('#discD').textContent=d.d;
-  $('#kit').innerHTML=d.k.map(function(id,j){var p=BY[id];return'<li style="animation-delay:'+(j*.07)+'s"><img src="'+IMG+p.i+'" alt=""><div><b>'+p.n+'</b><span>'+p.s[0][0]+': '+p.s[0][1]+'</span></div></li>'}).join('');
+/* pressure */
+function drawP(){
+  var v=+$('#pr').value/100,dep=24*(1-v)+3,h=40+v*100,t=.9+v*.4,y0=196,x0=20,x1=500,c=260;
+  $('#dip').setAttribute('d','M'+x0+' '+y0+'L'+(c-90)+' '+y0+'Q'+c+' '+(y0+dep*2)+' '+(c+90)+' '+y0+'L'+x1+' '+y0+'V232H'+x0+'Z');
+  $('#dipTop').setAttribute('d','M'+x0+' '+(y0+12)+'L'+(c-90)+' '+(y0+12)+'Q'+c+' '+(y0+12+dep*1.6)+' '+(c+90)+' '+(y0+12)+'L'+x1+' '+(y0+12));
+  $('#jg').setAttribute('transform','translate(0,'+(dep*.95)+')');
+  var j=$('#jumper');j.style.setProperty('--h',h+'px');j.style.setProperty('--t',t+'s');
+  $('#pTxt').textContent=v<.34?'Давление ниже: дорожка мягче, детская группа прыгает уверенно':v<.67?'Средний надув: базовая подготовка и разрядники':'Давление выше: жёсткий толчок для двойных и тройных элементов';
 }
-dt.addEventListener('click',function(e){var c=e.target.closest('.chip');if(c)showD(+c.dataset.i)});
-showD(0);
-$('#kitAdd').addEventListener('click',function(){DS[di].k.forEach(function(id){cart[id]=BY[id].n});renderCart();this.textContent='Добавлено ✓';var b=this;setTimeout(function(){b.textContent='Добавить набор в заявку'},1600)});
+$('#pr').addEventListener('input',drawP);drawP();
 
-/* track */
-var COL=[['#D7192D','красная'],['#0B2A6F','синяя'],['#1D4FB8','голубая'],['#7D8597','серая'],['#1E1E1E','чёрная'],['#F2C200','жёлтая']];
+/* track configurator */
+var COL=[['#E0182D','красная'],['#0A2A78','синяя'],['#1F4FD1','голубая'],['#7D8597','серая'],['#1E1E1E','чёрная'],['#F2C200','жёлтая']];
 var tr={len:10,th:0.2,col:0};
 $('#sw').innerHTML=COL.map(function(c,i){return'<button style="background:'+c[0]+'" data-i="'+i+'" class="'+(i?'':'on')+'" aria-label="'+c[1]+'"></button>'}).join('');
 function drawT(){
   var L=tr.len,X0=40,BY=220,px=640/Math.max(L,8),W=2*px,ox=W*.55,oy=-W*.42,T=Math.max(tr.th*px,3),len=L*px;
-  function P(pts){return'M'+pts.map(function(q){return q[0].toFixed(1)+' '+q[1].toFixed(1)}).join('L')+'Z'}
+  function Pp(pts){return'M'+pts.map(function(q){return q[0].toFixed(1)+' '+q[1].toFixed(1)}).join('L')+'Z'}
   var a=[X0,BY-T],b=[X0+len,BY-T],c=[X0+len+ox,BY-T+oy],d=[X0+ox,BY-T+oy];
-  $('#tTop').setAttribute('d',P([a,b,c,d]));
-  $('#tSide').setAttribute('d',P([[X0,BY],[X0+len,BY],b,a]));$('#tSide').setAttribute('fill',COL[tr.col][0]);
-  $('#tEnd').setAttribute('d',P([[X0+len,BY],[X0+len+ox,BY+oy],c,b]));$('#tEnd').setAttribute('fill',COL[tr.col][0]);$('#tEnd').setAttribute('opacity',.8);
-  $('#floor').setAttribute('d',P([[0,BY+14],[760,BY+14],[760,BY+oy-30],[0,BY+oy-30]]));
-  var ln='';[1/3,2/3].forEach(function(f){ln+='<path d="M'+(a[0]+ox*f)+' '+(a[1]+oy*f)+'L'+(b[0]+ox*f)+' '+(b[1]+oy*f)+'" stroke="#fff" stroke-width="'+Math.max(px*.05,1)+'" opacity=".75"/>'});$('#lanes').innerHTML=ln;
-  var mh=1.7*px,mx=X0+len*.12+ox*.5,my=BY-T+oy*.5,hr=mh*.075;
+  $('#tTop').setAttribute('d',Pp([a,b,c,d]));
+  $('#tSide').setAttribute('d',Pp([[X0,BY],[X0+len,BY],b,a]));$('#tSide').setAttribute('fill',COL[tr.col][0]);
+  $('#tEnd').setAttribute('d',Pp([[X0+len,BY],[X0+len+ox,BY+oy],c,b]));$('#tEnd').setAttribute('fill',COL[tr.col][0]);$('#tEnd').setAttribute('opacity',.8);
+  $('#floor').setAttribute('d',Pp([[0,BY+14],[760,BY+14],[760,BY+oy-30],[0,BY+oy-30]]));
+  var ln='';[1/4,2/4,3/4].forEach(function(f){ln+='<path d="M'+(a[0]+ox*f)+' '+(a[1]+oy*f)+'L'+(b[0]+ox*f)+' '+(b[1]+oy*f)+'" stroke="#fff" stroke-width="'+Math.max(px*.05,1)+'" opacity=".8"/>'});$('#lanes').innerHTML=ln;
+  var mh=1.7*px,mx=X0+len*.12+ox*.5,my=BY-T+oy*.5,hr=mh*.075,s=mh/54,sh=my-mh+hr*2;
   $('#mHead').setAttribute('cx',mx);$('#mHead').setAttribute('cy',my-mh+hr);$('#mHead').setAttribute('r',hr);
-  var s=mh/54,sh=my-mh+hr*2;
   $('#mBody').setAttribute('d','M'+mx+' '+sh+'V'+(sh+24*s)+'M'+mx+' '+(sh+6*s)+'L'+(mx-9*s)+' '+(sh+18*s)+'M'+mx+' '+(sh+6*s)+'L'+(mx+9*s)+' '+(sh+18*s)+'M'+mx+' '+(sh+24*s)+'L'+(mx-6*s)+' '+my+'M'+mx+' '+(sh+24*s)+'L'+(mx+6*s)+' '+my);
   $('#mBody').setAttribute('stroke-width',Math.max(s*3,1.5));
   var ml=$('#mLbl');ml.setAttribute('x',mx+Math.max(10*s,8));ml.setAttribute('y',my-mh*.55);
   var step=L>30?10:L>12?5:1,r='<path d="M'+X0+' '+(BY+30)+'H'+(X0+len)+'" stroke="#9AA0AE"/>';
   for(var m=0;m<=L;m+=step){var x=X0+m*px;r+='<path d="M'+x+' '+(BY+26)+'V'+(BY+34)+'" stroke="#9AA0AE"/><text x="'+x+'" y="'+(BY+52)+'" text-anchor="middle">'+m+'</text>'}
-  r+='<path d="M'+(X0+len)+' '+(BY+22)+'V'+(BY+38)+'" stroke="#D7192D" stroke-width="2"/><text x="'+(X0+len)+'" y="'+(BY+68)+'" text-anchor="end" fill="#D7192D" font-weight="700">'+L+' м</text>';
+  r+='<path d="M'+(X0+len)+' '+(BY+22)+'V'+(BY+38)+'" stroke="#E0182D" stroke-width="2"/><text x="'+(X0+len)+'" y="'+(BY+68)+'" text-anchor="end" fill="#E0182D" font-weight="800">'+L+' м</text>';
   $('#ruler').innerHTML=r;
-  var lg=$('#trkLogo'),fs=Math.min(W*.42,60);lg.setAttribute('font-size',fs);lg.setAttribute('x',0);lg.setAttribute('y',0);lg.setAttribute('text-anchor','middle');
-  var bx=X0+len*.5+ox*.2,byy=a[1]+oy*.2;lg.setAttribute('transform','matrix(1 0 -0.55 0.42 '+bx+' '+byy+') scale(1 1.6)');
+  var lg=$('#trkLogo'),fs=Math.min(W*.42,60);lg.setAttribute('font-size',fs);lg.setAttribute('text-anchor','middle');
+  lg.setAttribute('transform','matrix(1 0 -0.55 0.42 '+(X0+len*.5+ox*.2)+' '+(a[1]+oy*.2)+') scale(1 1.6)');
   lg.setAttribute('opacity',$('#logo').checked?1:0);
-  $('#lenO').textContent=L+' м';
-  $('#sSize').textContent=String(tr.th).replace('.',',')+' × 2 × '+L+' м';
+  $('#lenO').textContent=L+' м';$('#sSize').textContent=String(tr.th).replace('.',',')+' × 2 × '+L+' м';
 }
 $('#len').addEventListener('input',function(){tr.len=+this.value;drawT()});
 $('#thick').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;$$('button',this).forEach(function(x){x.classList.remove('on')});b.classList.add('on');tr.th=+b.dataset.v;drawT()});
 $('#sw').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;$$('button',this).forEach(function(x){x.classList.remove('on')});b.classList.add('on');tr.col=+b.dataset.i;drawT()});
 $('#logo').addEventListener('change',drawT);
 $('#trkAdd').addEventListener('click',function(){
-  var n='Дорожка '+String(tr.th).replace('.',',')+'×2×'+tr.len+' м, боковина '+COL[tr.col][1]+($('#logo').checked?', логотип':'')+($('#velcro').checked?', велькро':'');
-  cart['trk'+Date.now()]=n;renderCart();this.textContent='Добавлено ✓';var b=this;setTimeout(function(){b.textContent='Добавить дорожку в заявку'},1600);
+  var n='Дорожка '+String(tr.th).replace('.',',')+' × 2 × '+tr.len+' м, боковина '+COL[tr.col][1]+($('#logo').checked?', логотип':'')+($('#velcro').checked?', велькро':'');
+  cart['trk'+Date.now()]=n;renderCart();var bt=this.querySelector('.bt');bt.textContent='✓ Добавлено';setTimeout(function(){bt.textContent='Дорожку в заявку'},1600);
 });
 drawT();
 
+/* catalog */
+var CATS=['Батуты','Дорожки','Маты','Сетки'],curP=null;
+$('#ctabs').innerHTML=CATS.map(function(c,i){return'<button class="dchip'+(i?'':' on')+'" data-c="'+c+'">'+c+'</button>'}).join('');
+function showPv(id){curP=id;var p=P[id],im=$('#pvImg');im.style.opacity=0;setTimeout(function(){im.src=IMG+p.i;im.alt=p.n;im.style.opacity=1},150);$('#pvName').textContent=p.n;$('#pvSpec').innerHTML=specRows(p.s);$('#pvAdd').dataset.id=id;$$('.rw').forEach(function(r){r.classList.toggle('cur',r.dataset.p==id)});renderCart()}
+function showC(c){$$('#ctabs .dchip').forEach(function(b){b.classList.toggle('on',b.dataset.c==c)});
+  var ids=Object.keys(P).filter(function(id){return P[id].c==c});
+  $('#rows').innerHTML=ids.map(function(id,i){var p=P[id];return'<li class="rw" data-p="'+id+'" style="animation-delay:'+(i*.05)+'s"><span class="n">'+String(i+1).padStart(2,'0')+'</span><div><h4>'+p.n+'</h4><small>'+p.k+'</small></div><button class="pl" data-id="'+id+'" aria-label="В заявку">+</button><div class="mob"><img src="'+IMG+p.i+'" alt="" loading="lazy"><table class="spec">'+specRows(p.s)+'</table></div></li>'}).join('');
+  showPv(ids[0]);}
+$('#ctabs').addEventListener('click',function(e){var b=e.target.closest('.dchip');if(b)showC(b.dataset.c)});
+$('#rows').addEventListener('click',function(e){var pl=e.target.closest('.pl');if(pl){tog(pl.dataset.id);return}var r=e.target.closest('.rw');if(r)showPv(r.dataset.p)});
+$('#rows').addEventListener('mouseover',function(e){var r=e.target.closest('.rw');if(r&&r.dataset.p!=curP&&innerWidth>820)showPv(r.dataset.p)});
+$('#pvAdd').addEventListener('click',function(){tog(this.dataset.id)});
+showC('Батуты');
+renderCart();
+
 /* counters */
-function count(el){var t=+el.dataset.c,st=null;function f(ts){if(!st)st=ts;var p=Math.min((ts-st)/1400,1);el.textContent=Math.round(t*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+function countTo(el,t){var st=null;function f(ts){if(!st)st=ts;var p=Math.min((ts-st)/1500,1),e=1-Math.pow(1-p,3);el.firstChild.textContent=Math.round(t*e);if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+function timeTo(el,str){var sec=+str.split(':')[0]*60+ +str.split(':')[1],st=null;function f(ts){if(!st)st=ts;var p=Math.min((ts-st)/1800,1),e=1-Math.pow(1-p,3),v=Math.round(sec*e);el.firstChild.textContent=Math.floor(v/60)+':'+String(v%60).padStart(2,'0');if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
 /* faq */
-$$('.faq details').forEach(function(d){var s=d.querySelector('summary'),a=d.querySelector('.a');s.addEventListener('click',function(e){e.preventDefault();if(d.open){a.animate([{height:a.offsetHeight+'px'},{height:'0px'}],{duration:300,easing:'ease'}).onfinish=function(){d.open=false};}else{d.open=true;var h=a.offsetHeight;a.animate([{height:'0px'},{height:h+'px'}],{duration:300,easing:'ease'})}})});
+$$('.faq details').forEach(function(d){var s=d.querySelector('summary'),a=d.querySelector('.a');s.addEventListener('click',function(e){e.preventDefault();if(d.open){a.animate([{height:a.offsetHeight+'px'},{height:'0px'}],{duration:300,easing:'ease'}).onfinish=function(){d.open=false}}else{d.open=true;var h=a.offsetHeight;a.animate([{height:'0px'},{height:h+'px'}],{duration:300,easing:'ease'})}})});
 /* form */
 $('#fp').addEventListener('input',function(){var d=this.value.replace(/\D/g,'');if(d[0]=='8')d='7'+d.slice(1);if(d&&d[0]!='7')d='7'+d;d=d.slice(0,11);var o='+7';if(d.length>1)o+=' ('+d.slice(1,4);if(d.length>=4)o+=')';if(d.length>4)o+=' '+d.slice(4,7);if(d.length>7)o+='-'+d.slice(7,9);if(d.length>9)o+='-'+d.slice(9,11);this.value=d?o:''});
-$('#f').addEventListener('submit',function(e){e.preventDefault();var ok=true;['#fn','#fp'].forEach(function(s){var i=$(s);var bad=s=='#fp'?i.value.replace(/\D/g,'').length<11:!i.value.trim();i.style.borderColor=bad?'#D7192D':'';if(bad)ok=false});if(ok)this.classList.add('done')});
-/* gaps */
+$('#f').addEventListener('submit',function(e){e.preventDefault();var ok=true;['#fn','#fp'].forEach(function(s){var i=$(s);var bad=s=='#fp'?i.value.replace(/\D/g,'').length<11:!i.value.trim();i.style.borderColor=bad?'#E0182D':'';if(bad)ok=false});if(ok)this.classList.add('done')});
 $('#gapsToggle').addEventListener('click',function(){document.body.classList.toggle('clean');this.textContent=document.body.classList.contains('clean')?'Показать пробелы в данных':'Скрыть пробелы в данных'});
 /* scroll */
-var top_=$('#top'),prog=$('#prog');
-function onS(){var y=scrollY,h=document.documentElement.scrollHeight-innerHeight;prog.style.width=(y/h*100)+'%';top_.classList.toggle('sc',y>10);document.body.classList.toggle('at-top',y<innerHeight*.6);$('#cartFab').classList.toggle('show',Object.keys(cart).length>0&&innerWidth<820&&y>innerHeight)}
+var top_=$('#top'),prog=$('#prog'),tl=$('#tl'),tlF=$('#tlFill');
+function onS(){var y=scrollY,h=document.documentElement.scrollHeight-innerHeight;prog.style.width=(y/h*100)+'%';top_.classList.toggle('sc',y>40);document.body.classList.toggle('at-top',y<innerHeight*.6);
+  var r=tl.getBoundingClientRect(),p=Math.min(Math.max((innerHeight*.6-r.top)/r.height,0),1);tlF.style.height=(p*100)+'%'}
 addEventListener('scroll',onS,{passive:true});onS();
-/* reveal */
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var t=e.target;t.classList.add('in');var b=t.querySelector('[data-t2]');if(b)timeTo(b,b.dataset.t2);io.unobserve(t)}})},{threshold:.15});
 $$('[data-r]').forEach(function(el){io.observe(el)});
-addEventListener('load',function(){document.body.classList.add('loaded');setTimeout(function(){$$('[data-c]').forEach(count)},500)});
-setTimeout(function(){document.body.classList.add('loaded')},1500);
+var started=false;function go(){if(started)return;started=true;document.body.classList.add('loaded');setTimeout(function(){var a=$('[data-t]');timeTo(a,a.dataset.t);var c=$('[data-c]');countTo(c,+c.dataset.c)},700)}
+addEventListener('load',go);setTimeout(go,1500);
 </script>
 </body>
 </html>
