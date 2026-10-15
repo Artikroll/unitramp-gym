@@ -58,7 +58,7 @@ body.clean .gap{display:none}
 /* hero */
 .hero{min-height:100vh;min-height:100svh;display:flex;align-items:stretch;background:var(--blue);color:#fff;overflow:hidden;position:relative}
 .hero-ph{position:absolute;inset:0 0 0 36%;overflow:hidden}
-.hero-ph img{width:100%;height:100%;object-fit:cover;object-position:28% 50%;transform:scale(1.12);transition:transform 2.4s cubic-bezier(.2,.8,.2,1)}
+.hero-ph img{width:100%;height:100%;object-fit:cover;object-position:35% 55%;transform:scale(1.12);transition:transform 2.4s cubic-bezier(.2,.8,.2,1)}
 .loaded .hero-ph img{transform:none}
 .hero-ph:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--blue) 0%,rgba(10,42,120,.55) 22%,rgba(10,42,120,0) 48%),linear-gradient(0deg,rgba(6,20,60,.55),rgba(6,20,60,0) 40%)}
 .hero-panel{position:absolute;inset:0 auto 0 0;width:60%;background:var(--blue);clip-path:polygon(0 0,100% 0,74% 100%,0 100%);transform:translateX(-12%);transition:transform 1.2s cubic-bezier(.7,0,.2,1)}
@@ -85,7 +85,7 @@ body.clean .gap{display:none}
 .loaded .arc text{opacity:.9}
 .arc circle{fill:var(--red);opacity:0;transition:opacity .4s 3s}
 .loaded .arc circle{opacity:1}
-.hero-cap{position:absolute;right:40px;top:96px;z-index:2;font-size:13px;color:rgba(255,255,255,.7)}
+.hero-cap{position:absolute;right:40px;top:96px;z-index:2;font-size:13px;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.7)}
 .stats{position:absolute;left:0;right:0;bottom:0;z-index:3}
 .hero .stats .wrap{display:grid;grid-template-columns:repeat(3,1fr);padding:0 40px;flex-direction:row}
 .stat{background:#fff;color:var(--ink);padding:26px 30px 24px;position:relative;transform:translateY(100%);transition:transform .9s cubic-bezier(.2,.8,.2,1)}
@@ -380,7 +380,7 @@ body{font-size:17px}
 .top .btn{margin-left:auto}
 .hero{min-height:auto;flex-direction:column}
 .hero-ph{position:relative;inset:auto;height:52vh;min-height:320px;order:2}
-.hero-ph img{object-position:20% 50%}
+.hero-ph img{object-position:30% 55%}
 .hero-ph:after{background:linear-gradient(180deg,var(--blue) 0%,rgba(10,42,120,0) 30%)}
 .hero-panel,.hero-stripe,.arc,.hero-cap{display:none}
 .hero .wrap{padding-top:100px;padding-bottom:36px}
@@ -438,15 +438,10 @@ form .row{grid-template-columns:1fr}
 </header>
 
 <section class="hero">
-  <div class="hero-ph"><img src="assets/img/v-spot.jpg" alt="Тренер страхует гимнастку на акробатической дорожке UNITRAMP"></div>
+  <div class="hero-ph"><img src="assets/img/g-kids.jpg" alt="Детская группа на разминке на акробатической дорожке UNITRAMP"></div>
   <div class="hero-panel"></div>
   <div class="hero-stripe"><i></i><i></i></div>
-  <svg class="arc" viewBox="0 0 500 400" preserveAspectRatio="none" aria-hidden="true">
-    <path class="draw" d="M40 360 C 120 40, 330 20, 460 330"/>
-    <circle cx="40" cy="360" r="7"/><circle cx="460" cy="330" r="7"/>
-    <text x="10" y="392">толчок</text><text x="210" y="70">полёт</text><text x="400" y="372">приземление</text>
-  </svg>
-  <div class="hero-cap">Кадр из видео UNITRAMP: тренировка на дорожке</div>
+  <div class="hero-cap">Разминка детской группы на дорожке UNITRAMP</div>
   <div class="wrap">
     <div class="tag" style="color:#fff">Спортивное оборудование UNITRAMP</div>
     <h1><span class="ln"><span>Снаряды для тех,</span></span><span class="ln"><span>кто готовит</span></span><span class="ln"><span><em>спортсменов</em></span></span></h1>
